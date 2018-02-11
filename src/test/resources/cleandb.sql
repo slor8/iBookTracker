@@ -1,0 +1,2 @@
+delete from user;
+INSERT INTO user VALUES (1,'Joe','Coyne','password','joeCoyne@email.com','112-343-3423','Jconye'),(2,'Fred','Hensen','password','fredHense@email.com','342-432-5453','Fhensen'),(3,'Barney','Curry','password','barneyCurry@email.com','453-345-2234','Bcurry'),(4,'Karen','Mack','password','karenMack@email.com','454-495-0003','Kmack'),(5,'Dianne','Klein','password','dianneKelin@email.com','900-343-5430','Dklein'),(6,'Dawn','Tillman','password','dawnTillman@email.com','342-636-4500','Dtillman');

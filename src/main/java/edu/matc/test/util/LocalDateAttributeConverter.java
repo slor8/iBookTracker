@@ -1,4 +1,4 @@
-package edu.matc.util;
+package edu.matc.test.util;
 
 public class LocalDateAttributeConverter {
 }

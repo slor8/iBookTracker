@@ -1,4 +1,4 @@
 package edu.matc.controller;
 
-public class SignUpUser {
+public class Login {
 }

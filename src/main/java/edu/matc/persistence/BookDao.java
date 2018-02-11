@@ -1,4 +1,4 @@
 package edu.matc.persistence;
 
-public class hello {
+public class BookDao {
 }

@@ -1,5 +1,8 @@
+<%@include file="taglib.jsp" %>
+<c:import url="head.jsp" />
 <html>
+<title>Welcome To iBookTracker</title>
 <body>
-<h2>Hello World!</h2>
+    <c:import url="actualIndex.jsp" />
 </body>
 </html>
