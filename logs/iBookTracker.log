@@ -12,3 +12,6 @@
 [DEBUG] 2018-02-10 23:12:57.006 [main] UserDao - Searching for: I
 [DEBUG] 2018-02-10 23:12:57.295 [main] UserDao - Insert user: User{id=0, firstName='See', lastName='Lor', email='seeLor@gmail.com', phone='454-565-5645', userName='Slor'}
 [DEBUG] 2018-02-10 23:12:57.318 [main] UserDao - Get user by Id: 13
+[DEBUG] 2018-02-11 00:30:53.397 [main] UserDao - Searching for: I
+[DEBUG] 2018-02-13 09:51:22.976 [main] UserDao - Searching for: I
+[DEBUG] 2018-02-13 09:57:44.161 [main] UserDao - Searching for: I

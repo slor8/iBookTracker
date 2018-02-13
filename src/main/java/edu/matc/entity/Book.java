@@ -8,8 +8,8 @@ public class Book {
     private int callNo;
     private String title;
     private String author;
-    //private String publisher;
+    private String publisher;
     private int quantity;
-    //private LocalDateTime issued;
+    private LocalDateTime issued;
     private LocalDateTime addedDate;
 }
