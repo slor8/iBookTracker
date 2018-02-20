@@ -8,5 +8,5 @@
 | Week 3 | Videos, activity, reading, exercise, and project checkpoint| 9 | 
 | Week 4 | Videos, activity, reading, and exercise| 5 | 
 | Week 5 | Videos, activity, reading, and exercise| 4 | 
-| Week 6 | | | 
+| Week 6 | Videos, activity, reading, and exercise| | 
 
