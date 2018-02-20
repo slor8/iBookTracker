@@ -20,14 +20,18 @@ iBookTracker will automatically track people when they borrow, return, and will 
     * Store users
     * Store book information
 * Web Services
+    * Google Book API
 * Logging 
     * Configurable logging using Log4J
 * CSS
     * Bootstrap
 * Hosting
     * AWS
+* Independent Research Topic
+    * Google Book API
+    * Bootstrap
 * Unit Testing 
-    * JUnit test
+    * JUnit tests to achieve 80%+ code coverage
 * IDE: IntelliJ IDEA
 
 
