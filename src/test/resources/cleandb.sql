@@ -1,2 +1,4 @@
 delete from user;
+delete from issueBook;
 INSERT INTO user VALUES (1,'Joe','Coyne','password','joeCoyne@email.com','112-343-3423','Jconye'),(2,'Fred','Hensen','password','fredHense@email.com','342-432-5453','Fhensen'),(3,'Barney','Curry','password','barneyCurry@email.com','453-345-2234','Bcurry'),(4,'Karen','Mack','password','karenMack@email.com','454-495-0003','Kmack'),(5,'Dianne','Klein','password','dianneKelin@email.com','900-343-5430','Dklein'),(6,'Dawn','Tillman','password','dawnTillman@email.com','342-636-4500','Dtillman');
+INSERT INTO issueBook VALUES (1, '978-0-13-601970-1', 'Jcoyne', '112-343-3423', '2018-02-13 14:57:58', 1), (2, '978-0-13-601970-2', 'Bcurry', '453-345-2234', '2018-02-13 14:57:58', 3), (3, '978-0-13-601970-3', 'Dtillman', '342-432-5453', '2018-02-13 14:57:58', 6);

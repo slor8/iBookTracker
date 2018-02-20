@@ -15,13 +15,13 @@
 
 ### Week 4
 - [X] Complete database design (On the Paper)
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user DAO
-- [ ] Create the test database
-- [ ] Create user DAO unit tests
-- [ ] Weekly journal entry
-- [ ] Set up logging
+- [X] Create the database and user table
+- [X] Create the user entity class and annotate for hibernate
+- [X] Create user DAO
+- [X] Create the test database
+- [X] Create user DAO unit tests
+- [X] Weekly journal entry
+- [X] Set up logging
 - [ ] Create class uml diagram
 - [ ] Prepare for week 5 peer design/code review
 

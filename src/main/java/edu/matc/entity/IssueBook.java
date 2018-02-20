@@ -1,17 +1,34 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 /**
  * The type Issue book.
  */
+@Entity(name = "IssueBook")
+@Table(name = "issueBook")
 public class IssueBook {
 
-    private int issueBookId;
-    private int callNumber;
-    private LocalDateTime issueDate;
-    private int userId;
-    private String userContact;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
+    private int id;
+
+    private String isbn;
+
+    private String user_Name;
+
+    private String user_Phone;
+
+    //private LocalDateTime issue_date;
+
+    @ManyToOne
+    private User user;
+
 
     /**
      * Instantiates a new Issue book.
@@ -22,54 +39,90 @@ public class IssueBook {
     /**
      * Instantiates a new Issue book.
      *
-     * @param issueBookId the issue book id
-     * @param callNumber  the call number
-     * @param issueDate   the issue date
-     * @param userId      the user id
-     * @param userContact the user contact
+     * @param isbn       the isbn
+     * @param user_Name  the user name
+     * @param user_Phone the user phone
+     * //@param issue_date the issue date
+     * @param user       the user
      */
-    public IssueBook(int issueBookId, int callNumber, LocalDateTime issueDate, int userId, String userContact) {
-        this.issueBookId = issueBookId;
-        this.callNumber = callNumber;
-        this.issueDate = issueDate;
-        this.userId = userId;
-        this.userContact = userContact;
+    public IssueBook(String isbn, String user_Name, String user_Phone, /**LocalDateTime issue_date,**/ User user) {
+        this.isbn = isbn;
+        this.user_Name = user_Name;
+        this.user_Phone = user_Phone;
+        //this.issue_date = issue_date;
+        this.user = user;
     }
 
     /**
-     * Gets issue book id.
+     * Gets id.
      *
-     * @return the issue book id
+     * @return the id
      */
-    public int getIssueBookId() {
-        return issueBookId;
+    public int getId() {
+        return id;
     }
 
     /**
-     * Sets issue book id.
+     * Sets id.
      *
-     * @param issueBookId the issue book id
+     * @param id the id
      */
-    public void setIssueBookId(int issueBookId) {
-        this.issueBookId = issueBookId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**
-     * Gets call number.
+     * Gets isbn.
      *
-     * @return the call number
+     * @return the isbn
      */
-    public int getCallNumber() {
-        return callNumber;
+    public String getIsbn() {
+        return isbn;
     }
 
     /**
-     * Sets call number.
+     * Sets isbn.
      *
-     * @param callNumber the call number
+     * @param isbn the isbn
      */
-    public void setCallNumber(int callNumber) {
-        this.callNumber = callNumber;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUser_Name() {
+        return user_Name;
+    }
+
+    /**
+     * Sets user name.
+     *
+     * @param user_Name the user name
+     */
+    public void setUser_Name(String user_Name) {
+        this.user_Name = user_Name;
+    }
+
+    /**
+     * Gets user phone.
+     *
+     * @return the user phone
+     */
+    public String getUser_Phone() {
+        return user_Phone;
+    }
+
+    /**
+     * Sets user phone.
+     *
+     * @param user_Phone the user phone
+     */
+    public void setUser_Phone(String user_Phone) {
+        this.user_Phone = user_Phone;
     }
 
     /**
@@ -77,63 +130,66 @@ public class IssueBook {
      *
      * @return the issue date
      */
-    public LocalDateTime getIssueDate() {
-        return issueDate;
-    }
+    //public LocalDateTime getIssue_date() {
+    //    return issue_date;
+    //}
 
     /**
      * Sets issue date.
      *
-     * @param issueDate the issue date
+     * @param issue_date the issue date
      */
-    public void setIssueDate(LocalDateTime issueDate) {
-        this.issueDate = issueDate;
+    //public void setIssue_date(LocalDateTime issue_date) {
+    //    this.issue_date = issue_date;
+    //}
+
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
+    public User getUser() {
+        return user;
     }
 
     /**
-     * Gets user id.
+     * Sets user.
      *
-     * @return the user id
+     * @param user the user
      */
-    public int getUserId() {
-        return userId;
-    }
-
-    /**
-     * Sets user id.
-     *
-     * @param userId the user id
-     */
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    /**
-     * Gets user contact.
-     *
-     * @return the user contact
-     */
-    public String getUserContact() {
-        return userContact;
-    }
-
-    /**
-     * Sets user contact.
-     *
-     * @param userContact the user contact
-     */
-    public void setUserContact(String userContact) {
-        this.userContact = userContact;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
     public String toString() {
         return "IssueBook{" +
-                "issueBookId=" + issueBookId +
-                ", callNumber=" + callNumber +
-                ", issueDate=" + issueDate +
-                ", userId=" + userId +
-                ", userContact='" + userContact + '\'' +
+                "id=" + id +
+                ", isbn='" + isbn + '\'' +
+                ", user_Name='" + user_Name + '\'' +
+                ", user_Phone='" + user_Phone + '\'' +
+                //", issue_date=" + issue_date +
+                ", user=" + user +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        IssueBook issueBook = (IssueBook) o;
+        return id == issueBook.id &&
+                Objects.equals(isbn, issueBook.isbn) &&
+                Objects.equals(user_Name, issueBook.user_Name) &&
+                Objects.equals(user_Phone, issueBook.user_Phone) &&
+                Objects.equals(user, issueBook.user);
+
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, isbn, user_Name, user_Phone, user);
     }
 }

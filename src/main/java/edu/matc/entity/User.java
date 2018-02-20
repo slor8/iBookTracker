@@ -4,6 +4,9 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -33,6 +36,9 @@ public class User {
 
     @Column(name = "user_name")
     private String userName;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<IssueBook> issueBooks = new HashSet<>();
 
 
     /**
@@ -168,6 +174,44 @@ public class User {
         this.userName = userName;
     }
 
+    /**
+     * Gets issue books.
+     *
+     * @return the issue books
+     */
+    public Set<IssueBook> getIssueBooks() {
+        return issueBooks;
+    }
+
+    /**
+     * Sets issue books.
+     *
+     * @param issueBooks the issue books
+     */
+    public void setIssueBooks(Set<IssueBook> issueBooks) {
+        this.issueBooks = issueBooks;
+    }
+
+    /**
+     * Add issue book.
+     *
+     * @param issueBook the issue book
+     */
+    public void addIssueBook(IssueBook issueBook) {
+        issueBooks.add(issueBook);
+        issueBook.setUser(this);
+    }
+
+    /**
+     * Remove issue book.
+     *
+     * @param issueBook the issue book
+     */
+    public void removeIssueBook(IssueBook issueBook) {
+        issueBooks.remove(issueBook);
+        issueBook.setUser(null);
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -178,5 +222,25 @@ public class User {
                 ", phone='" + phone + '\'' +
                 ", userName='" + userName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user = (User) o;
+        return id == user.id &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(phone, user.phone) &&
+                Objects.equals(userName, user.userName);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, firstName, lastName, email, phone, userName);
     }
 }

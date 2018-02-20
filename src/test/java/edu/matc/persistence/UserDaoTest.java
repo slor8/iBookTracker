@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.IssueBook;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,6 +21,8 @@ class UserDaoTest {
      */
     UserDao dao;
 
+    GenericDao genericDao;
+
     /**
      * Sets up.
      */
@@ -27,6 +30,7 @@ class UserDaoTest {
     void setUp() {
 
         dao = new UserDao();
+        genericDao = new GenericDao(User.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -38,7 +42,7 @@ class UserDaoTest {
     @Test
     void getAllUsersSuccess() {
 
-        List<User> users = dao.getAllUsers();
+        List<User> users = genericDao.getAll();
         assertEquals(6, users.size());
     }
 
@@ -48,7 +52,7 @@ class UserDaoTest {
     @Test
     void getUsersByUserLastNameSuccess() {
 
-        List<User> users = dao.getUsersByUserLastName("I");
+        List<User> users = genericDao.getUsersByUserLastName("I");
         assertEquals(2, users.size());
 
     }
@@ -61,13 +65,36 @@ class UserDaoTest {
 
         User newUser = new User("See", "Lor", "seeLor@gmail.com", "454-565-5645", "Slor");
 
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
 
         assertNotEquals(0, id);
 
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)genericDao.getById(id);
 
         assertEquals("See", insertedUser.getFirstName());
+    }
+
+
+    /**
+     * Insert success.
+     */
+    @Test
+    void insertWithIssueBookSuccess() {
+
+        User newUser = new User("See", "Lor", "seeLor@gmail.com", "233-3434-4534 ", "Slor");
+
+        String bookISBN = "454-0-65-563445-0";
+        String name = "Slor";
+        String phone = "454-565-5645";
+        IssueBook issueBook = new IssueBook(bookISBN,name,phone,newUser);
+
+        newUser.addIssueBook(issueBook);
+
+        int id = genericDao.insert(newUser);
+        assertNotEquals(0, id);
+        User insertedUser = dao.getById(id);
+        assertEquals("See", insertedUser.getFirstName());
+        assertEquals(1, insertedUser.getIssueBooks().size());
     }
 
 
@@ -77,8 +104,19 @@ class UserDaoTest {
     @Test
     void deleteSuccess() {
 
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
+    }
+
+    @Test
+    void updateSucess() {
+        String newLastName = "Wright";
+        User userToUpdate = (User)genericDao.getById(3);
+        userToUpdate.setLastName(newLastName);
+        genericDao.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User)genericDao.getById(3);
+        assertEquals(userToUpdate, retrievedUser);
+
     }
 
 }

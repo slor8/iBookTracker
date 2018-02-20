@@ -40,7 +40,6 @@ public class UserDao {
         return users;
     }
 
-
     /**
      * Gets all users by user last name.
      *
