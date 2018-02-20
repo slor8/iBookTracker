@@ -27,11 +27,11 @@
 
 ### Week 5
 - [ ] Create the for all jsp using bootstrap or materialize
-- [ ] Weekly journal entry
-- [ ] Add the role table
-- [ ] Add the role entity
-- [ ] Create the role DAO
-- [ ] Create the role DAO unit tests
+- [X] Weekly journal entry
+- [X] Add the role table
+- [X] Add the role entity
+- [X] Create the role DAO
+- [X] Create the role DAO unit tests
 - [ ] Add jsp to add a user
 
 ### Week 6
