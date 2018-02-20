@@ -53,8 +53,12 @@ class IssueBookDaoTest {
     @Test
     void insertSuccess() {
 
-        UserDao userDao = new UserDao();
-        User user = userDao.getById(1);
+
+        //UserDao userDao = new UserDao();
+        GenericDao userDao = new GenericDao(User.class);
+
+
+        User user = (User)userDao.getById(1);
         IssueBook newIssueBook = new IssueBook("424-0-65-594405-2", "Jconye", "112-343-3423", user);
         user.addIssueBook(newIssueBook);
 
@@ -67,6 +71,7 @@ class IssueBookDaoTest {
         assertEquals("Jconye", insertedIssueBook.getUser_Name());
         assertNotNull(insertedIssueBook.getUser());
         assertEquals("Joe", insertedIssueBook.getUser().getFirstName());
+
     }
 
 
