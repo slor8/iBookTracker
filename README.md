@@ -37,9 +37,9 @@ iBookTracker will automatically track people when they borrow, return, and will 
 
 #### Design
 
-* [Screen Design](DesignDocuments/databaseDesign.png)
+* [Screen Design](ScreenDesign.md)
 * [Application Flow](DesignDocuments/ApplicationFlow.md)
-* [Database Design](DesignDocuments/DatabaseDiagram.png)
+* [Database Design](DesignDocuments/databaseDesign.png)
 
 ### [Project Plan](ProjectPlan.md)
 ### [Development Time Log Journal](TimeLog.md)
