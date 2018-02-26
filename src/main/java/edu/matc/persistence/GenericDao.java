@@ -1,6 +1,5 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -45,9 +44,7 @@ public class GenericDao<T> {
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
-
         session.close();
-
         return list;
     }
 
@@ -66,6 +63,43 @@ public class GenericDao<T> {
         List<T> list = session.createQuery(query).getResultList();
         session.close();
         return list;
+    }
+
+    public List<T> getByPropertyLike(String propertyName, String value) {
+
+        logger.debug("Searching for user with {} = {}",  propertyName, value);
+
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        Expression<String> propertyPath = root.get(propertyName);
+
+        query.where(builder.like(propertyPath, "%" + value + "%"));
+
+        List<T> users = session.createQuery(query).getResultList();
+
+        session.close();
+        return users;
+    }
+
+    public List<T> getByPropertyEqual(String propertyName, String value) {
+        logger.debug("Searching for user with " + propertyName + " = " + value);
+
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<T> users = session.createQuery(query).getResultList();
+
+        session.close();
+        return users;
+
     }
 
     public <T>T getById(int id) {

@@ -26,26 +26,26 @@
 - [ ] Prepare for week 5 peer design/code review
 
 ### Week 5
-- [ ] Create the for all jsp using bootstrap or materialize
+- [X] Create the for all jsp using bootstrap or materialize
 - [X] Weekly journal entry
 - [X] Add the role table
 - [X] Add the role entity
 - [X] Create the role DAO
 - [X] Create the role DAO unit tests
-- [ ] Add jsp to add a user
+- [X] Add jsp to add a user
 
 ### Week 6
 - [ ] Create db on AWS
 - [ ] Deploy to AWS for first time
-- [ ] Weekly journal entry
-- [ ] Create Book table
-- [ ] Add the Book entity
-- [ ] Create IssueBook table
-- [ ] Add the IssueBook entity
+- [X] Weekly journal entry
+- [X] Create Book table
+- [X] Add the Book entity
+- [X] Create Borrow table
+- [X] Add the Borrow entity
 - [ ] Add view and add functionality in jsp for user
 - [ ] Build the book jsp
 - [ ] Add view and add functionality in jsp for user
-- [ ] Build the issueBook jsp
+- [X] Build the borrow jsp
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, 
 DAO is unit tested, Log4J is implemented (no System.out.println), class design and any other diagrams you plan
 to use have been created.
@@ -56,19 +56,19 @@ to use have been created.
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
 - [ ] Add the Book and IssueBook
-- [ ] Create book and issueBook entities
+- [ ] Create book and borrow entities
 - [ ] Update view IssueBook 
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 ### Week 8
 - [ ] Weekly journal entry
 - [ ] Create book report table
-- [ ] Create issueBook report table
+- [ ] Create borrow report table
 - [ ] Add the book report entity
 - [ ] Create the book DAO and unit tests
-- [ ] Create the issueBook DAO and unit tests
+- [ ] Create the borrow DAO and unit tests
 - [ ] Build the book jsp
-- [ ] Build the issueBook jsp
+- [ ] Build the borrow jsp
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that display data from the database is implemented.
 
 ### Week 9

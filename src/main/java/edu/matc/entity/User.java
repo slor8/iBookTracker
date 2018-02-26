@@ -28,17 +28,14 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "user_email")
-    private String email;
-
-    @Column(name = "user_phone")
-    private String phone;
-
     @Column(name = "user_name")
     private String userName;
 
+    @Column(name = "password")
+    private String password;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<IssueBook> issueBooks = new HashSet<>();
+    private Set<Borrow> borrows = new HashSet<>();
 
 
     /**
@@ -48,168 +45,79 @@ public class User {
 
     }
 
-
-    /**
-     * Instantiates a new User.
-     *
-     * @param firstName the first name
-     * @param lastName  the last name
-     * @param email     the email
-     * @param phone     the phone
-     * @param userName  the user name
-     */
-    public User(String firstName, String lastName, String email, String phone, String userName) {
+    public User(String firstName, String lastName, String userName, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
-        this.phone = phone;
         this.userName = userName;
+        this.password = password;
     }
 
-    /**
-     * Gets userId.
-     *
-     * @return the userId
-     */
     public int getId() {
         return id;
     }
 
-    /**
-     * Sets userId.
-     *
-     * @param id the userId
-     */
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * Gets first name.
-     *
-     * @return the first name
-     */
     public String getFirstName() {
         return firstName;
     }
 
-    /**
-     * Sets first name.
-     *
-     * @param firstName the first name
-     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    /**
-     * Gets last name.
-     *
-     * @return the last name
-     */
     public String getLastName() {
         return lastName;
     }
 
-    /**
-     * Sets last name.
-     *
-     * @param lastName the last name
-     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    /**
-     * Gets email.
-     *
-     * @return the email
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * Sets email.
-     *
-     * @param email the email
-     */
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    /**
-     * Gets phone.
-     *
-     * @return the phone
-     */
-    public String getPhone() {
-        return phone;
-    }
-
-    /**
-     * Sets phone.
-     *
-     * @param phone the phone
-     */
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    /**
-     * Gets user name.
-     *
-     * @return the user name
-     */
     public String getUserName() {
         return userName;
     }
 
-    /**
-     * Sets user name.
-     *
-     * @param userName the user name
-     */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    /**
-     * Gets issue books.
-     *
-     * @return the issue books
-     */
-    public Set<IssueBook> getIssueBooks() {
-        return issueBooks;
+    public String getPassword() {
+        return password;
     }
 
-    /**
-     * Sets issue books.
-     *
-     * @param issueBooks the issue books
-     */
-    public void setIssueBooks(Set<IssueBook> issueBooks) {
-        this.issueBooks = issueBooks;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Set<Borrow> getBorrows() {
+        return borrows;
+    }
+
+    public void setBorrows(Set<Borrow> borrows) {
+        this.borrows = borrows;
     }
 
     /**
      * Add issue book.
      *
-     * @param issueBook the issue book
+     * @param borrow the issue book
      */
-    public void addIssueBook(IssueBook issueBook) {
-        issueBooks.add(issueBook);
-        issueBook.setUser(this);
+    public void addBorrow(Borrow borrow) {
+        borrows.add(borrow);
+        borrow.setUser(this);
     }
 
     /**
      * Remove issue book.
      *
-     * @param issueBook the issue book
+     * @param borrow the issue book
      */
-    public void removeIssueBook(IssueBook issueBook) {
-        issueBooks.remove(issueBook);
-        issueBook.setUser(null);
+    public void removeBorrow(Borrow borrow) {
+        borrows.remove(borrow);
+        borrow.setUser(null);
     }
 
     @Override
@@ -218,9 +126,8 @@ public class User {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
                 ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 
@@ -233,14 +140,13 @@ public class User {
         return id == user.id &&
                 Objects.equals(firstName, user.firstName) &&
                 Objects.equals(lastName, user.lastName) &&
-                Objects.equals(email, user.email) &&
-                Objects.equals(phone, user.phone) &&
-                Objects.equals(userName, user.userName);
+                Objects.equals(userName, user.userName) &&
+                Objects.equals(password, user.password);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, firstName, lastName, email, phone, userName);
+        return Objects.hash(id, firstName, lastName, userName, password);
     }
 }

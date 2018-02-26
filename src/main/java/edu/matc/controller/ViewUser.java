@@ -11,25 +11,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet (
-        urlPatterns = {"/searchUser"}
+@WebServlet(
+        urlPatterns = {"/viewUser"}
 )
 
-public class SearchUser extends HttpServlet {
+public class ViewUser extends HttpServlet{
 
-    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        GenericDao userDao = new GenericDao(User.class);
 
-        GenericDao genericDao = new GenericDao(User.class);
+        req.setAttribute("users", userDao.getAll());
 
-        if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", genericDao.getUsersByUserLastName(req.getParameter("searchTerm")));
-        } else {
-            req.setAttribute("users", genericDao.getAll());
-        }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
-
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/viewUser.jsp");
         dispatcher.forward(req, resp);
+
     }
 }

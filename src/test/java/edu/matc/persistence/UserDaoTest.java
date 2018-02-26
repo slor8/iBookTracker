@@ -1,7 +1,8 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.IssueBook;
+import edu.matc.entity.Book;
 import edu.matc.entity.User;
+import edu.matc.entity.Borrow;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,11 +17,6 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class UserDaoTest {
 
-    /**
-     * The Dao.
-     */
-    UserDao dao;
-
     GenericDao genericDao;
 
     /**
@@ -29,7 +25,6 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
 
-        dao = new UserDao();
         genericDao = new GenericDao(User.class);
 
         Database database = Database.getInstance();
@@ -57,13 +52,27 @@ class UserDaoTest {
 
     }
 
+    @Test
+    void getByPropertyLikeSuccess() {
+        List<User> users = genericDao.getByPropertyLike("firstName", "e");
+        assertEquals(5, users.size());
+
+    }
+
+    @Test
+    void getByPropertyEqualSuccess() {
+        List<User> users = genericDao.getByPropertyEqual("lastName", "Curry");
+        assertEquals(1, users.size());
+        assertEquals(3, users.get(0).getId());
+    }
+
     /**
      * Insert success.
      */
     @Test
     void insertSuccess() {
 
-        User newUser = new User("See", "Lor", "seeLor@gmail.com", "454-565-5645", "Slor");
+        User newUser = new User("Fred", "Flintstone", "fflintstone", "password");
 
         int id = genericDao.insert(newUser);
 
@@ -71,7 +80,7 @@ class UserDaoTest {
 
         User insertedUser = (User)genericDao.getById(id);
 
-        assertEquals("See", insertedUser.getFirstName());
+        assertEquals("Fred", insertedUser.getFirstName());
     }
 
 
@@ -79,22 +88,21 @@ class UserDaoTest {
      * Insert success.
      */
     @Test
-    void insertWithIssueBookSuccess() {
+    void insertWithBorrowSuccess() {
 
-        User newUser = new User("See", "Lor", "seeLor@gmail.com", "233-3434-4534 ", "Slor");
+        User newUser = new User("Ryan", "Flintston", "rflintstone", "password");
+        Book newBook = new Book("The Hunger Games", "Suzanne Collins", "978-0-439-02352-8");
 
-        String bookISBN = "454-0-65-563445-0";
-        String name = "Slor";
-        String phone = "454-565-5645";
-        IssueBook issueBook = new IssueBook(bookISBN,name,phone,newUser);
+        String userContact = "608-534-4534";
+        Borrow borrow = new Borrow(userContact, newUser, newBook);
 
-        newUser.addIssueBook(issueBook);
+        newUser.addBorrow(borrow);
 
         int id = genericDao.insert(newUser);
         assertNotEquals(0, id);
-        User insertedUser = dao.getById(id);
-        assertEquals("See", insertedUser.getFirstName());
-        assertEquals(1, insertedUser.getIssueBooks().size());
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals("Ryan", insertedUser.getFirstName());
+        assertEquals(1, insertedUser.getBorrows().size());
     }
 
 

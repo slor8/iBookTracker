@@ -1,4 +1,6 @@
 delete from user;
-delete from issueBook;
-INSERT INTO user VALUES (1,'Joe','Coyne','password','joeCoyne@email.com','112-343-3423','Jconye'),(2,'Fred','Hensen','password','fredHense@email.com','342-432-5453','Fhensen'),(3,'Barney','Curry','password','barneyCurry@email.com','453-345-2234','Bcurry'),(4,'Karen','Mack','password','karenMack@email.com','454-495-0003','Kmack'),(5,'Dianne','Klein','password','dianneKelin@email.com','900-343-5430','Dklein'),(6,'Dawn','Tillman','password','dawnTillman@email.com','342-636-4500','Dtillman');
-INSERT INTO issueBook VALUES (1, '978-0-13-601970-1', 'Jcoyne', '112-343-3423', '2018-02-13 14:57:58', 1), (2, '978-0-13-601970-2', 'Bcurry', '453-345-2234', '2018-02-13 14:57:58', 3), (3, '978-0-13-601970-3', 'Dtillman', '342-432-5453', '2018-02-13 14:57:58', 6);
+delete from borrow;
+delete from book;
+INSERT INTO user VALUES (1,'Joe','Coyne','jcoyne','supersecret1'),(2,'Fred','Hensen','fhensen','supersecret2'),(3,'Barney','Curry','bcurry','supersecret3'),(4,'Karen','Mack','kmack','supersecret4'),(5,'Dianne','Klein','dklein','supersecret5'),(6,'Dawn','Tillman','dtillman','supersecret6');
+INSERT INTO borrow VALUES (1, 1, 1, '608-344-4534', '2018-02-13 14:57:58', '2018-02-16 14:57:58'), (2, 3, 2, '608-565-5004', '2018-02-13 14:57:58', '2018-02-16 14:57:58'), (3, 6, 3, '608-212-3422', '2018-02-17 14:57:58', '2018-02-17 14:57:58');
+INSERT INTO book VALUES (1, 'Charlotte''s Web', 'E. B. White', '978-0-062-65875-3'), (2, 'The Time Traveler''s Wife', 'Audrey Niffenegger', '978-0-15-602943-8'), (3, 'Her Fearful Symmetry', 'Audrey Niffenegger', '978-0-224-08562-5');

@@ -1,5 +1,4 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="Search Results" />
 <%@include file="head.jsp"%>
 
 <script type="text/javascript" class="init">
@@ -11,10 +10,11 @@
 <body>
 
 <div class="container-fluid">
-    <h2>Search Results: </h2>
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
+        <th>Id</th>
         <th>Name</th>
+        <th>Password</th>
         <th>Username</th>
         <th>Email</th>
         <th>Phone</th>
@@ -23,7 +23,9 @@
         <tbody>
         <c:forEach var="user" items="${users}">
             <tr>
+                <td>${user.id}</td>
                 <td>${user.firstName} ${user.lastName}</td>
+                <td>${user.password}</td>
                 <td>${user.userName}</td>
                 <td>${user.email}</td>
                 <td>${user.phone}</td>
