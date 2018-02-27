@@ -48,6 +48,12 @@ public class GenericDao<T> {
         return list;
     }
 
+    /**
+     * Gets users by user last name.
+     *
+     * @param lastName the last name
+     * @return the users by user last name
+     */
     public List<T> getUsersByUserLastName(String lastName) {
 
         logger.debug("Searching for: {}", lastName);
@@ -65,6 +71,13 @@ public class GenericDao<T> {
         return list;
     }
 
+    /**
+     * Gets by property like.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property like
+     */
     public List<T> getByPropertyLike(String propertyName, String value) {
 
         logger.debug("Searching for user with {} = {}",  propertyName, value);
@@ -85,6 +98,13 @@ public class GenericDao<T> {
         return users;
     }
 
+    /**
+     * Gets by property equal.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property equal
+     */
     public List<T> getByPropertyEqual(String propertyName, String value) {
         logger.debug("Searching for user with " + propertyName + " = " + value);
 
@@ -102,6 +122,13 @@ public class GenericDao<T> {
 
     }
 
+    /**
+     * Gets by id.
+     *
+     * @param <T> the type parameter
+     * @param id  the id
+     * @return the by id
+     */
     public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
@@ -109,6 +136,11 @@ public class GenericDao<T> {
         return entity;
     }
 
+    /**
+     * Save or update.
+     *
+     * @param entity the entity
+     */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -117,6 +149,12 @@ public class GenericDao<T> {
         session.close();
     }
 
+    /**
+     * Insert int.
+     *
+     * @param entity the entity
+     * @return the int
+     */
     public int insert(T entity) {
         int id = 0;
         Session session = getSession();
@@ -127,6 +165,11 @@ public class GenericDao<T> {
         return id;
     }
 
+    /**
+     * Delete.
+     *
+     * @param entity the entity
+     */
     public void delete(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();

@@ -5,6 +5,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * The type Issue book.
+ */
 @Entity(name = "IssueBook")
 @Table(name = "issueBook")
 public class IssueBook {
@@ -22,9 +25,20 @@ public class IssueBook {
     @ManyToOne
     private Book book;
 
+    /**
+     * Instantiates a new Issue book.
+     */
     public IssueBook() {
     }
 
+    /**
+     * Instantiates a new Issue book.
+     *
+     * @param email    the email
+     * @param phone    the phone
+     * @param fullName the full name
+     * @param book     the book
+     */
     public IssueBook(String email, String phone, String fullName, Book book) {
         this.email = email;
         this.phone = phone;
@@ -32,42 +46,92 @@ public class IssueBook {
         this.book = book;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
     public String getPhone() {
         return phone;
     }
 
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    /**
+     * Gets full name.
+     *
+     * @return the full name
+     */
     public String getFullName() {
         return fullName;
     }
 
+    /**
+     * Sets full name.
+     *
+     * @param fullName the full name
+     */
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
 
+    /**
+     * Gets book.
+     *
+     * @return the book
+     */
     public Book getBook() {
         return book;
     }
 
+    /**
+     * Sets book.
+     *
+     * @param book the book
+     */
     public void setBook(Book book) {
         this.book = book;
     }

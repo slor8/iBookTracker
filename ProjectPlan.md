@@ -23,7 +23,7 @@
 - [X] Weekly journal entry
 - [X] Set up logging
 - [ ] Create class uml diagram
-- [ ] Prepare for week 5 peer design/code review
+- [X] Prepare for week 5 peer design/code review
 
 ### Week 5
 - [X] Create the for all jsp using bootstrap or materialize
@@ -42,11 +42,11 @@
 - [X] Add the Book entity
 - [X] Create Borrow table
 - [X] Add the Borrow entity
-- [ ] Add view and add functionality in jsp for user
-- [ ] Build the book jsp
-- [ ] Add view and add functionality in jsp for user
+- [X] Add view and add functionality in jsp for user
+- [X] Build the book jsp
+- [X] Add view and add functionality in jsp for user
 - [X] Build the issueBook jsp
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, 
+- [X] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, 
 DAO is unit tested, Log4J is implemented (no System.out.println), class design and any other diagrams you plan
 to use have been created.
 

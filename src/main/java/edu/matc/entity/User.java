@@ -44,6 +44,14 @@ public class User {
 
     }
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+     * @param password  the password
+     */
     public User(String firstName, String lastName, String userName, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -51,60 +59,130 @@ public class User {
         this.password = password;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets first name.
+     *
+     * @return the first name
+     */
     public String getFirstName() {
         return firstName;
     }
 
+    /**
+     * Sets first name.
+     *
+     * @param firstName the first name
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Gets last name.
+     *
+     * @return the last name
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * Sets last name.
+     *
+     * @param lastName the last name
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
     public String getUserName() {
         return userName;
     }
 
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
     public void setPassword(String password) {
         this.password = password;
     }
 
+    /**
+     * Gets books.
+     *
+     * @return the books
+     */
     public Set<Book> getBooks() {
         return books;
     }
 
+    /**
+     * Sets books.
+     *
+     * @param books the books
+     */
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
 
 
+    /**
+     * Add book.
+     *
+     * @param book the book
+     */
     public void addBook(Book book) {
         books.add(book);
         book.setUser(this);
     }
 
+    /**
+     * Remove book.
+     *
+     * @param book the book
+     */
     public void removeBook(Book book) {
         books.remove(book);
         book.setUser(null);

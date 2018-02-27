@@ -16,6 +16,9 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class UserDaoTest {
 
+    /**
+     * The Generic dao.
+     */
     GenericDao genericDao;
 
     /**
@@ -51,6 +54,9 @@ class UserDaoTest {
 
     }
 
+    /**
+     * Gets by property like success.
+     */
     @Test
     void getByPropertyLikeSuccess() {
         List<User> users = genericDao.getByPropertyLike("firstName", "e");
@@ -58,6 +64,9 @@ class UserDaoTest {
 
     }
 
+    /**
+     * Gets by property equal success.
+     */
     @Test
     void getByPropertyEqualSuccess() {
         List<User> users = genericDao.getByPropertyEqual("lastName", "Curry");
@@ -117,6 +126,9 @@ class UserDaoTest {
         assertNull(genericDao.getById(3));
     }
 
+    /**
+     * Update sucess.
+     */
     @Test
     void updateSucess() {
         String newLastName = "Wright";

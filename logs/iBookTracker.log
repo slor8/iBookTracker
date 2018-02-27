@@ -289,3 +289,31 @@
 [DEBUG] 2018-02-27 00:47:20.763 [main] GenericDao - Searching for user with author = e
 [DEBUG] 2018-02-27 00:47:27.945 [main] GenericDao - Searching for user with phone = 608-354-4453
 [DEBUG] 2018-02-27 00:47:28.396 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-02-27 12:51:01.801 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-27 12:51:02.587 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-02-27 12:51:02.668 [main] GenericDao - Searching for: I
+[DEBUG] 2018-02-27 12:51:03.325 [main] GenericDao - Searching for user with author = E. B. White
+[DEBUG] 2018-02-27 12:51:03.403 [main] GenericDao - Searching for user with author = e
+[DEBUG] 2018-02-27 12:51:03.861 [main] GenericDao - Searching for user with phone = 608-354-4453
+[DEBUG] 2018-02-27 12:51:03.944 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-02-27 13:40:54.178 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-27 13:40:54.740 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-02-27 13:40:54.813 [main] GenericDao - Searching for: I
+[DEBUG] 2018-02-27 13:40:55.165 [main] GenericDao - Searching for user with author = E. B. White
+[DEBUG] 2018-02-27 13:40:55.225 [main] GenericDao - Searching for user with author = e
+[DEBUG] 2018-02-27 13:40:55.588 [main] GenericDao - Searching for user with phone = 608-354-4453
+[DEBUG] 2018-02-27 13:40:55.628 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-02-27 13:41:49.334 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-27 13:41:49.802 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-02-27 13:41:49.871 [main] GenericDao - Searching for: I
+[DEBUG] 2018-02-27 13:41:50.187 [main] GenericDao - Searching for user with author = E. B. White
+[DEBUG] 2018-02-27 13:41:50.253 [main] GenericDao - Searching for user with author = e
+[DEBUG] 2018-02-27 13:41:50.530 [main] GenericDao - Searching for user with phone = 608-354-4453
+[DEBUG] 2018-02-27 13:41:50.575 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-02-27 13:59:40.082 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-27 13:59:40.458 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-02-27 13:59:40.525 [main] GenericDao - Searching for: I
+[DEBUG] 2018-02-27 13:59:40.803 [main] GenericDao - Searching for user with author = E. B. White
+[DEBUG] 2018-02-27 13:59:40.859 [main] GenericDao - Searching for user with author = e
+[DEBUG] 2018-02-27 13:59:41.098 [main] GenericDao - Searching for user with phone = 608-354-4453
+[DEBUG] 2018-02-27 13:59:41.139 [main] GenericDao - Searching for user with phone = 608

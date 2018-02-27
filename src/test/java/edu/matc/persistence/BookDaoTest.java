@@ -15,6 +15,9 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class BookDaoTest {
 
+    /**
+     * The Generic dao.
+     */
     GenericDao genericDao;
 
     /**
@@ -41,16 +44,9 @@ class BookDaoTest {
 
     /**
      * Gets books by book last name success.
-
-    @Test
-    void getBooksByBookLastNameSuccess() {
-
-        List<Book> books = genericDao.getBooksByBookLastName("I");
-        assertEquals(2, books.size());
-
-    }
-     **/
-
+     *
+     * @Test void getBooksByBookLastNameSuccess() {List<Book> books = genericDao.getBooksByBookLastName("I");assertEquals(2, books.size());}
+     */
     @Test
     void getByPropertyLikeSuccess() {
         List<Book> books = genericDao.getByPropertyLike("author", "e");
@@ -58,6 +54,9 @@ class BookDaoTest {
 
     }
 
+    /**
+     * Gets by property equal success.
+     */
     @Test
     void getByPropertyEqualSuccess() {
         List<Book> books = genericDao.getByPropertyEqual("author", "E. B. White");
@@ -99,6 +98,9 @@ class BookDaoTest {
         assertNull(genericDao.getById(3));
     }
 
+    /**
+     * Update sucess.
+     */
     @Test
     void updateSucess() {
         String newLastName = "Wright";
