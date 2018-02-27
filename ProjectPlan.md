@@ -45,7 +45,7 @@
 - [ ] Add view and add functionality in jsp for user
 - [ ] Build the book jsp
 - [ ] Add view and add functionality in jsp for user
-- [X] Build the borrow jsp
+- [X] Build the issueBook jsp
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, 
 DAO is unit tested, Log4J is implemented (no System.out.println), class design and any other diagrams you plan
 to use have been created.
@@ -56,19 +56,19 @@ to use have been created.
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
 - [ ] Add the Book and IssueBook
-- [ ] Create book and borrow entities
+- [ ] Create book and issueBook entities
 - [ ] Update view IssueBook 
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 ### Week 8
 - [ ] Weekly journal entry
 - [ ] Create book report table
-- [ ] Create borrow report table
+- [ ] Create issueBook report table
 - [ ] Add the book report entity
 - [ ] Create the book DAO and unit tests
-- [ ] Create the borrow DAO and unit tests
+- [ ] Create the issueBook DAO and unit tests
 - [ ] Build the book jsp
-- [ ] Build the borrow jsp
+- [ ] Build the issueBook jsp
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that display data from the database is implemented.
 
 ### Week 9

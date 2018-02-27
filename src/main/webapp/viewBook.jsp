@@ -13,19 +13,23 @@
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
         <th>Id</th>
-        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Isbn</th>
         </thead>
         <tbody>
-        <c:forEach var="borrow" items="${borrows}">
+        <c:forEach var="book" items="${books}">
             <tr>
-                <td>${borrow.id}</td>
-                <td>${borrow.isbn}</td>
+                <td>${book.id}</td>
+                <td>${book.title}
+                <td>${book.author}</td>
+                <td>${book.isbn}</td>
             </tr>
-
 
         </c:forEach>
         </tbody>
     </table>
+
 </div>
 
 </body>

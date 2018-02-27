@@ -21,11 +21,11 @@
             <form action="viewBook" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">View Books</button>
             </form>
-            <form action="borrow" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">Borrow Book</button>
+            <form action="issueBook" method="GET">
+                <button class="btn btn-info btn-block login" type="submit">Issue Book</button>
             </form>
-            <form action="viewBorrowBook" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">View Borrow Books</button>
+            <form action="viewIssueBook" method="GET">
+                <button class="btn btn-info btn-block login" type="submit">View Issue Books</button>
             </form>
             <form action="returnBook" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">Return Book</button>

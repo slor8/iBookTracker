@@ -16,26 +16,27 @@ public class Book {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @Column(name = "title")
     private String title;
 
-    @Column(name = "author")
     private String author;
 
-    @Column(name = "isbn")
     private String isbn;
 
+    @ManyToOne
+    private User user;
+
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Borrow> borrows = new HashSet<>();
+    private Set<IssueBook> issueBooks = new HashSet<>();
 
 
     public Book() {
     }
 
-    public Book(String title, String author, String isbn) {
+    public Book(String title, String author, String isbn, User user) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
+        this.user = user;
     }
 
     public int getId() {
@@ -70,32 +71,30 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public Set<Borrow> getBorrows() {
-        return borrows;
+    public User getUser() {
+        return user;
     }
 
-    public void setBorrows(Set<Borrow> borrows) {
-        this.borrows = borrows;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    /**
-     * Add issue book.
-     *
-     * @param borrow the issue book
-     */
-    public void addBorrow(Borrow borrow) {
-        borrows.add(borrow);
-        borrow.setBook(this);
+    public Set<IssueBook> getIssueBooks() {
+        return issueBooks;
     }
 
-    /**
-     * Remove issue book.
-     *
-     * @param borrow the issue book
-     */
-    public void removeBorrow(Borrow borrow) {
-        borrows.remove(borrow);
-        borrow.setBook(null);
+    public void setIssueBooks(Set<IssueBook> issueBooks) {
+        this.issueBooks = issueBooks;
+    }
+
+    public void addIssueBook(IssueBook issueBook) {
+        issueBooks.add(issueBook);
+        issueBook.setBook(this);
+    }
+
+    public void removeIssueBook(IssueBook issueBook) {
+        issueBooks.remove(issueBook);
+        issueBook.setBook(null);
     }
 
     @Override
@@ -105,6 +104,7 @@ public class Book {
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", isbn='" + isbn + '\'' +
+                ", user=" + user +
                 '}';
     }
 
@@ -116,14 +116,14 @@ public class Book {
         Book book = (Book) o;
         return id == book.id &&
                 Objects.equals(title, book.title) &&
-                Objects.equals(author, book.borrows) &&
+                Objects.equals(author, book.author) &&
                 Objects.equals(isbn, book.isbn) &&
-                Objects.equals(borrows, book.borrows);
+                Objects.equals(user, book.user);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, title, author, isbn, borrows);
+        return Objects.hash(id, title, author, isbn, user);
     }
 }

@@ -2,7 +2,6 @@ package edu.matc.persistence;
 
 import edu.matc.entity.Book;
 import edu.matc.entity.User;
-import edu.matc.entity.Borrow;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -88,21 +87,23 @@ class UserDaoTest {
      * Insert success.
      */
     @Test
-    void insertWithBorrowSuccess() {
+    void insertWithBookSuccess() {
 
         User newUser = new User("Ryan", "Flintston", "rflintstone", "password");
-        Book newBook = new Book("The Hunger Games", "Suzanne Collins", "978-0-439-02352-8");
 
-        String userContact = "608-534-4534";
-        Borrow borrow = new Borrow(userContact, newUser, newBook);
+        String bookTitle = "The Hunger Games";
+        String bookAuthor = "Suzanne Collins";
+        String bookIsbn = "978-0-439-02352-8";
+        Book book = new Book(bookTitle, bookAuthor, bookIsbn, newUser);
 
-        newUser.addBorrow(borrow);
+        newUser.addBook(book);
 
         int id = genericDao.insert(newUser);
-        assertNotEquals(0, id);
+        assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
         assertEquals("Ryan", insertedUser.getFirstName());
-        assertEquals(1, insertedUser.getBorrows().size());
+        assertEquals(1, insertedUser.getBooks().size());
+
     }
 
 
@@ -124,7 +125,6 @@ class UserDaoTest {
         genericDao.saveOrUpdate(userToUpdate);
         User retrievedUser = (User)genericDao.getById(3);
         assertEquals(userToUpdate, retrievedUser);
-
     }
 
 }

@@ -26,7 +26,7 @@
 
 ### Search Book
 
-### Add Book(Favorite)
+### Add Book
 1. Option only available to logged in users with proper role
 1. User enters book details
 1. Details are sent to add book servlet
@@ -36,7 +36,7 @@
 1. Dao adds book to the database (book table)
 1. Servlet sends confirmation to add page that book has been added.
 
-### View Book(Favorite)
+### View Book
 1. Page sends a request to view book servlet along with criteria(all).
 1. Servlet uses the book dao to select book according to criteria
 1. Dao performs select and creates book objects from results.
@@ -52,16 +52,16 @@
 1. Details are sent to Borrows Book Servlet
 1. Servlet create Borrow Book report object
 1. Servlet sends object to dao
-1. Dao adds borrow book to the database
-1. Servlet sends confirmation to borrow book page that borrow book has been added.
+1. Dao adds issueBook book to the database
+1. Servlet sends confirmation to issueBook book page that issueBook book has been added.
 
 ### View Borrow Book
-1. Page sends a request to view borrow book servlet along with criteria(all).
-1. Servlet uses the borrow dao to select book according to criteria
-1. Dao performs select and creates borrow object from results.
-1. Dao returns list of borrow book by user.
-1. Servlet sends list back to borrow jsp.
-1. Borrow reports jsp display the borrow.
+1. Page sends a request to view issueBook book servlet along with criteria(all).
+1. Servlet uses the issueBook dao to select book according to criteria
+1. Dao performs select and creates issueBook object from results.
+1. Dao returns list of issueBook book by user.
+1. Servlet sends list back to issueBook jsp.
+1. Borrow reports jsp display the issueBook.
 1. Consider paging results so page does not get long and too much data is sent.
 
 ### Return Book

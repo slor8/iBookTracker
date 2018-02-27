@@ -1,6 +1,6 @@
 package edu.matc.controller;
 
-import edu.matc.entity.User;
+import edu.matc.entity.Book;
 import edu.matc.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -18,9 +18,10 @@ import java.io.IOException;
 public class ViewBook extends HttpServlet{
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //GenericDao userDao = new GenericDao(Book.class);
 
-        //req.setAttribute("users", userDao.getAll());
+        GenericDao bookDao = new GenericDao(Book.class);
+
+        req.setAttribute("books", bookDao.getAll());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewBook.jsp");
         dispatcher.forward(req, resp);

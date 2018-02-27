@@ -13,28 +13,23 @@
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
         <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-        <th>Password</th>
-        <th>Delete User</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Full Name</th>
         </thead>
         <tbody>
-        <c:forEach var="user" items="${users}">
+        <c:forEach var="issueBook" items="${issueBooks}">
             <tr>
-                <td>${user.id}</td>
-                <td>${user.firstName}
-                <td>${user.lastName}</td>
-                <td>${user.userName}</td>
-                <td>${user.password}</td>
-                <td><input type="checkbox" name="userCheckBox" value="${user.userName}"/></td>
+                <td>${issueBook.id}</td>
+                <td>${issueBook.email}</td>
+                <td>${issueBook.phone}</td>
+                <td>${issueBook.fullName}</td>
             </tr>
 
 
         </c:forEach>
         </tbody>
     </table>
-
 </div>
 
 </body>

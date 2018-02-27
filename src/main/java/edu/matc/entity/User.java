@@ -35,8 +35,7 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Borrow> borrows = new HashSet<>();
-
+    private Set<Book> books = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -92,32 +91,23 @@ public class User {
         this.password = password;
     }
 
-    public Set<Borrow> getBorrows() {
-        return borrows;
+    public Set<Book> getBooks() {
+        return books;
     }
 
-    public void setBorrows(Set<Borrow> borrows) {
-        this.borrows = borrows;
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 
-    /**
-     * Add issue book.
-     *
-     * @param borrow the issue book
-     */
-    public void addBorrow(Borrow borrow) {
-        borrows.add(borrow);
-        borrow.setUser(this);
+
+    public void addBook(Book book) {
+        books.add(book);
+        book.setUser(this);
     }
 
-    /**
-     * Remove issue book.
-     *
-     * @param borrow the issue book
-     */
-    public void removeBorrow(Borrow borrow) {
-        borrows.remove(borrow);
-        borrow.setUser(null);
+    public void removeBook(Book book) {
+        books.remove(book);
+        book.setUser(null);
     }
 
     @Override
