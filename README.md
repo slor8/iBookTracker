@@ -39,7 +39,7 @@ iBookTracker will automatically track people when they issueBook, return, and wi
 
 * [Screen Design](ScreenDesign.md)
 * [Application Flow](DesignDocuments/ApplicationFlow.md)
-* [Database Design](DesignDocuments/databaseScreen.png)
+* [Database Design](DesignDocuments/DatabaseDesign.png)
 
 ### [Project Plan](ProjectPlan.md)
 ### [Development Time Log Journal](TimeLog.md)
