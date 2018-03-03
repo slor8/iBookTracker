@@ -8,21 +8,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 @WebServlet(
-        urlPatterns = {"/returnBook"}
+        urlPatterns = {"/issueBook"}
 )
 
-public class ReturnBook extends HttpServlet{
+public class IssueBook extends HttpServlet{
+
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/returnBook.jsp");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/issueBook.jsp");
         dispatcher.forward(req, resp);
 
-
-
-
     }
-
 }

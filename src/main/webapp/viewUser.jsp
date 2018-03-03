@@ -17,7 +17,6 @@
         <th>Last Name</th>
         <th>Username</th>
         <th>Password</th>
-        <th>Delete User</th>
         </thead>
         <tbody>
         <c:forEach var="user" items="${users}">
@@ -27,7 +26,6 @@
                 <td>${user.lastName}</td>
                 <td>${user.userName}</td>
                 <td>${user.password}</td>
-                <td><input type="checkbox" name="userCheckBox" value="${user.userName}"/></td>
             </tr>
 
 

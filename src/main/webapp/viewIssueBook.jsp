@@ -13,17 +13,19 @@
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
         <th>Id</th>
+        <th>Name</th>
+        <th>Isbn</th>
         <th>Email</th>
-        <th>Phone</th>
-        <th>Full Name</th>
+        <th>Contact</th>
         </thead>
         <tbody>
         <c:forEach var="issueBook" items="${issueBooks}">
             <tr>
                 <td>${issueBook.id}</td>
+                <td>${issueBook.fullName}</td>
+                <td>${issueBook.isbn}</td>
                 <td>${issueBook.email}</td>
                 <td>${issueBook.phone}</td>
-                <td>${issueBook.fullName}</td>
             </tr>
 
 

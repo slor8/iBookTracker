@@ -25,7 +25,7 @@
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
 
 
-        <!--This part!!-->
+    <!--This part!!-->
     <!-- Latest compiled and minified CSS -->
 
     <link rel="stylesheet" type="text/css" href="./css/styles.css">

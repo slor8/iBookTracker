@@ -12,7 +12,7 @@
 <div class="container">
     <div class="login-container">
         <div class="form-box">
-            <form action="" method="GET">
+            <form action="searchBooks" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">Search Book</button>
             </form>
             <form action="addBook" method="GET">

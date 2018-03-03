@@ -16,6 +16,7 @@
         <th>Title</th>
         <th>Author</th>
         <th>Isbn</th>
+        <th>User Added</th>
         </thead>
         <tbody>
         <c:forEach var="book" items="${books}">
@@ -24,6 +25,11 @@
                 <td>${book.title}
                 <td>${book.author}</td>
                 <td>${book.isbn}</td>
+                <td>
+                    <c:forEach var="issueBook" items="${book.issueBooks}">
+                        ${issueBook.fullName}<br/>
+                    </c:forEach>
+                </td>
             </tr>
 
         </c:forEach>

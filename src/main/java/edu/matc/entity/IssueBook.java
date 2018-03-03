@@ -21,6 +21,7 @@ public class IssueBook {
     private String phone;
 
     private String fullName;
+    private String isbn;
 
     @ManyToOne
     private Book book;
@@ -39,10 +40,11 @@ public class IssueBook {
      * @param fullName the full name
      * @param book     the book
      */
-    public IssueBook(String email, String phone, String fullName, Book book) {
+    public IssueBook(String email, String phone, String fullName, String isbn, Book book) {
         this.email = email;
         this.phone = phone;
         this.fullName = fullName;
+        this.isbn = isbn;
         this.book = book;
     }
 
@@ -100,6 +102,14 @@ public class IssueBook {
         this.phone = phone;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
     /**
      * Gets full name.
      *
@@ -143,6 +153,7 @@ public class IssueBook {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fullName='" + fullName + '\'' +
+                ", isbn='" + isbn + '\'' +
                 ", book=" + book +
                 '}';
     }
@@ -158,11 +169,12 @@ public class IssueBook {
                 Objects.equals(email, issueBook.email) &&
                 Objects.equals(phone, issueBook.phone) &&
                 Objects.equals(fullName, issueBook.fullName) &&
+                Objects.equals(isbn, issueBook.isbn) &&
                 Objects.equals(book, issueBook.book);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email, phone, fullName, book);
+        return Objects.hash(id, email, phone, fullName, isbn, book);
     }
 }

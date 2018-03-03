@@ -60,7 +60,7 @@ public class IssueBookDaoTest {
         GenericDao bookDao = new GenericDao(Book.class);
 
          Book book = (Book)bookDao.getById(1);
-         IssueBook newIssueBook = new IssueBook("dklein@gmail.com", "354-453-4534", "Dianne Klein", book);
+         IssueBook newIssueBook = new IssueBook("dklein@gmail.com", "354-453-4534", "Dianne Klein", "978-0-062-65875-10", book);
          book.addIssueBook(newIssueBook);
 
          int id = genericDao.insert(newIssueBook);
