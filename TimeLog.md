@@ -9,7 +9,10 @@
 | Week 4 | Videos, activity, reading, and exercise| 5 | 
 | Week 5 | Videos, activity, reading, and exercise| 4 | 
 | Week 6 | Videos, activity, reading, and exercise| 5| 
-| Week 7 | Videos, activity, reading, and exercise| | 
+| Week 7 | Videos, activity, reading, and exercise| 5|
+| Week 8 | Videos, activity, reading, and exercise| 4|  
+| Week 9 | Videos, activity, reading, and exercise| 3| 
+| Week 10 | Videos, activity, reading, and exercise| | 
 
 
 

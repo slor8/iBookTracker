@@ -6,7 +6,7 @@
 - [X] Create project structure in intellij and push
 - [X] Add link to list of indie projects in student repo.
 - [X] Complete Problem statement
-- [ ] Determine possible web services or APIs to use
+- [X] Determine possible web services or APIs to use
 - [X] List technologies, versions and how they will be used
 - [X] Weekly project entry
 - [X] Write project plan
@@ -22,7 +22,7 @@
 - [X] Create user DAO unit tests
 - [X] Weekly journal entry
 - [X] Set up logging
-- [ ] Create class uml diagram
+- [X] Create class uml diagram
 - [X] Prepare for week 5 peer design/code review
 
 ### Week 5
@@ -35,8 +35,8 @@
 - [X] Add jsp to add a user
 
 ### Week 6
-- [ ] Create db on AWS
-- [ ] Deploy to AWS for first time
+- [X] Create db on AWS
+- [X] Deploy to AWS for first time
 - [X] Weekly journal entry
 - [X] Create Book table
 - [X] Add the Book entity
@@ -52,23 +52,23 @@ to use have been created.
 
 
 ### Week 7
-- [ ] Weekly journal entry
-- [ ] Set up authentication locally
+- [X] Weekly journal entry
+- [X] Set up authentication locally
 - [ ] Set up authentication on AWS
 - [ ] Add the Book and IssueBook
-- [ ] Create book and issueBook entities
+- [X] Create book and issueBook entities
 - [ ] Update view IssueBook 
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 ### Week 8
-- [ ] Weekly journal entry
-- [ ] Create book report table
-- [ ] Create issueBook report table
-- [ ] Add the book report entity
-- [ ] Create the book DAO and unit tests
-- [ ] Create the issueBook DAO and unit tests
-- [ ] Build the book jsp
-- [ ] Build the issueBook jsp
+- [X] Weekly journal entry
+- [X] Create book report table
+- [X] Create issueBook report table
+- [X] Add the book report entity
+- [X] Create the book DAO and unit tests
+- [X] Create the issueBook DAO and unit tests
+- [X] Build the book jsp
+- [X] Build the issueBook jsp
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that display data from the database is implemented.
 
 ### Week 9
