@@ -13,18 +13,22 @@
     </form-login-config>
   </login-config>
 
+
   <!-- Protect the user search page. -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>iBookAdmin</web-resource-name>
       <url-pattern>/welcomeAdmin</url-pattern>
+      <url-pattern>/addUser</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
 
+
   <security-role>
     <role-name>admin</role-name>
   </security-role>
+
 </web-app>

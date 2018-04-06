@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +18,7 @@ public class Logout extends HttpServlet {
 
         req.getSession().invalidate();
 
-        resp.sendRedirect("./homePage");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("logout.jsp");
+        dispatcher.forward(req, resp);
     }
 }

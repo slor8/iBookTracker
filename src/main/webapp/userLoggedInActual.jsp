@@ -1,9 +1,11 @@
-<div class="jumbotron">
-    <!--<div class="container">
+<!--<div class="jumbotron">
+    <div class="container">
         <h2>Welcome User</h2>
     </div>
-    -->
+
 </div>
+-->
+
 <div class="container">
     <form action="logOut" method="GET">
         <button class="btn btn-danger logOut" type="submit">Log Out</button>
@@ -15,13 +17,15 @@
             <form action="searchBooks" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">Search Book</button>
             </form>
-            <form action="addBook" method="GET">
+            <!--
+            <form action="addBook.jsp" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">Add Books</button>
             </form>
             <form action="viewBook" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">View Books</button>
             </form>
-            <form action="issueBook" method="GET">
+            -->
+            <form action="checkOutBook.jsp" method="GET">
                 <button class="btn btn-info btn-block login" type="submit">Issue Book</button>
             </form>
             <form action="viewIssueBook" method="GET">

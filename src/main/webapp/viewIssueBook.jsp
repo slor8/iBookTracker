@@ -12,26 +12,34 @@
 <div class="container-fluid">
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
-        <th>Id</th>
-        <th>Name</th>
+        <th>Title</th>
+        <th>Author</th>
         <th>Isbn</th>
-        <th>Email</th>
-        <th>Contact</th>
+        <th>Issue By:</th>
         </thead>
         <tbody>
-        <c:forEach var="issueBook" items="${issueBooks}">
+        <c:forEach var="book" items="${books}">
             <tr>
-                <td>${issueBook.id}</td>
-                <td>${issueBook.fullName}</td>
-                <td>${issueBook.isbn}</td>
-                <td>${issueBook.email}</td>
-                <td>${issueBook.phone}</td>
-            </tr>
+                <td>${book.title}</td>
+                <td>${book.author}</td>
+                <td>${book.isbn}</td>
+                <td>
+                    <c:forEach var="issueBook" items="${book.issueBooks}">
+                    <strong>Name: </strong>${issueBook.fullName}<br/>
+                    <strong>Email: </strong> ${issueBook.email}<br/>
+                    <strong>Contact: </strong> ${issueBook.phone}
 
+                </c:forEach>
+                </td>
+            </tr>
 
         </c:forEach>
         </tbody>
     </table>
+
+    <br/>
+    <a class="btn btn-info" href="welcomeUser">Back</a>
+
 </div>
 
 </body>

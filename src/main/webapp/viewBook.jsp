@@ -12,23 +12,26 @@
 <div class="container-fluid">
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
-        <th>Id</th>
         <th>Title</th>
         <th>Author</th>
-        <th>Isbn</th>
-        <th>User Added</th>
+        <th>ISBN</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
         </thead>
         <tbody>
         <c:forEach var="book" items="${books}">
             <tr>
-                <td>${book.id}</td>
-                <td>${book.title}
+                <td>${book.title}</td>
                 <td>${book.author}</td>
                 <td>${book.isbn}</td>
                 <td>
                     <c:forEach var="issueBook" items="${book.issueBooks}">
-                        ${issueBook.fullName}<br/>
-                    </c:forEach>
+                        <td>${issueBook.fullName}</td>
+                        <td>${issueBook.email}</td>
+                        <td>${issueBook.phone}</td>
+
+            </c:forEach>
                 </td>
             </tr>
 

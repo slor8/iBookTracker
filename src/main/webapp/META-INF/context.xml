@@ -3,6 +3,6 @@
            driverName="com.mysql.jdbc.Driver"
            connectionURL="jdbc:mysql://localhost:3306/iBookTracker?user=tomcat&amp;password=slor8"
            userTable="user" userNameCol="user_name" userCredCol="password"
-           userRoleTable="userRole" roleNameCol="role_name" >
+           userRoleTable="role" roleNameCol="role_name" >
     </Realm>
 </Context>

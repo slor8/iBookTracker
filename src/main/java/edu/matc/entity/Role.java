@@ -5,9 +5,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Entity(name = "UserRole")
-@Table(name = "userRole")
-public class UserRole {
+@Entity(name = "Role")
+@Table(name = "role")
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -23,16 +23,16 @@ public class UserRole {
     @Column(name = "user_name")
     private String userName;
 
-    @Column(name = "userRole_name")
-    private String userRoleName;
+    @Column(name = "role_name")
+    private String roleName;
 
-    public UserRole() {
+    public Role() {
     }
 
-    public UserRole(User user, String userName, String userRoleName) {
+    public Role(User user, String userName, String roleName) {
         this.user = user;
         this.userName = userName;
-        this.userRoleName = userRoleName;
+        this.roleName = roleName;
     }
 
     public int getId() {
@@ -59,12 +59,12 @@ public class UserRole {
         this.userName = userName;
     }
 
-    public String getUserRoleName() {
-        return userRoleName;
+    public String getRoleName() {
+        return roleName;
     }
 
-    public void setUserRoleName(String userRoleName) {
-        this.userRoleName = userRoleName;
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class UserRole {
                 "id=" + id +
                 ", user=" + user +
                 ", userName='" + userName + '\'' +
-                ", userRoleName='" + userRoleName + '\'' +
+                ", roleName='" + roleName + '\'' +
                 '}';
     }
 
@@ -82,15 +82,15 @@ public class UserRole {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UserRole userRole = (UserRole) o;
+        Role role = (Role) o;
 
-        return id == userRole.id &&
-                Objects.equals(userName, userRole.userName) &&
-                Objects.equals(userRoleName, userRole.userRoleName);
+        return id == role.id &&
+                Objects.equals(userName, role.userName) &&
+                Objects.equals(roleName, role.roleName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userRoleName, userName);
+        return Objects.hash(id, roleName, userName);
     }
 }

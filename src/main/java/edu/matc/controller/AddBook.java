@@ -17,9 +17,10 @@ import java.io.IOException;
 
 public class AddBook extends HttpServlet {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
 
-    /**
         Book book = new Book();
         GenericDao bookDao = new GenericDao(Book.class);
 
@@ -30,8 +31,8 @@ public class AddBook extends HttpServlet {
 
         bookDao.insert(book);
 
-    **/
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/addBook.jsp");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/addBookSuccess.jsp");
         dispatcher.forward(req, resp);
 
     }

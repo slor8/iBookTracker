@@ -43,6 +43,7 @@ class UserDaoTest {
         assertEquals(6, users.size());
     }
 
+
     /**
      * Gets users by user last name success.
      */
@@ -127,7 +128,7 @@ class UserDaoTest {
     }
 
     /**
-     * Update sucess.
+     * Update success.
      */
     @Test
     void updateSucess() {

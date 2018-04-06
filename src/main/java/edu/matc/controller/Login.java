@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,5 +17,7 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        RequestDispatcher dispatcher = req.getRequestDispatcher("loginSuccess.jsp");
+        dispatcher.forward(req, resp);
     }
 }

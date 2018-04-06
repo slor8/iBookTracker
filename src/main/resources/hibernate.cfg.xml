@@ -19,6 +19,7 @@
         <mapping class="edu.matc.entity.User"/>
         <mapping class="edu.matc.entity.Book"/>
         <mapping class="edu.matc.entity.IssueBook"/>
+        <mapping class="edu.matc.entity.Role"/>
 
 
     </session-factory>

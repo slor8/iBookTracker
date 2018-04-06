@@ -73,6 +73,21 @@
       <version>5.2.12.Final</version>
     </dependency>
 
+
+    <!-- https://developers.google.com/api-client-library/java/apis/books/v1 -->
+    <dependency>
+      <groupId>com.google.apis</groupId>
+      <artifactId>google-api-services-books</artifactId>
+      <version>v1-rev95-1.23.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-books -->
+    <dependency>
+      <groupId>com.google.apis</groupId>
+      <artifactId>google-api-services-books</artifactId>
+      <version>v1-rev21-1.14.1-beta</version>
+    </dependency>
+
+
   </dependencies>
   <build>
     <finalName>iBookTracker</finalName>

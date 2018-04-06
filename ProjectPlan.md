@@ -54,11 +54,11 @@ to use have been created.
 ### Week 7
 - [X] Weekly journal entry
 - [X] Set up authentication locally
-- [ ] Set up authentication on AWS
-- [ ] Add the Book and IssueBook
+- [X] Set up authentication on AWS
+- [X] Add the Book and IssueBook
 - [X] Create book and issueBook entities
 - [ ] Update view IssueBook 
-- [ ] Review and incorporate any feedback from Checkpoint 2.
+- [X] Review and incorporate any feedback from Checkpoint 2.
 
 ### Week 8
 - [X] Weekly journal entry
@@ -69,21 +69,21 @@ to use have been created.
 - [X] Create the issueBook DAO and unit tests
 - [X] Build the book jsp
 - [X] Build the issueBook jsp
-- [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that display data from the database is implemented.
+- [X] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that display data from the database is implemented.
 
 ### Week 9
-- [ ] Weekly journal entry
-- [ ] Review and incorporate feedback from Checkpoint 3.
-- [ ] Carefully review code for standards and best practices - (use a code quality tool)
+- [X] Weekly journal entry
+- [X] Review and incorporate feedback from Checkpoint 3.
+- [X] Carefully review code for standards and best practices - (use a code quality tool)
 
 ### Week 10
-- [ ] Weekly journal entry
+- [X] Weekly journal entry
 - [ ] Implement page results
 - [ ] Code review
 
 ### Week 11 -> Team Project Work Week
 - [ ] Weekly journal entry
-- [ ] Add Admin password set and functionality 
+- [X] Add Admin password set and functionality 
 
 ### Week 12 -> Team Project Due
 - [ ] Weekly journal entry
