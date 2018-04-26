@@ -1,17 +1,21 @@
 <%@include file="taglib.jsp"%>
 <c:set var="title" value="Login" />
-
 <%@include file="head.jsp"%>
 
-<body>
-<FORM ACTION="j_security_check" METHOD="POST">
-    <TABLE>
-        <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
-        <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
-        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
-    </TABLE>
-</FORM>
+    <div class="container">
+        <div class="login-container">
+            <img id="logo-navbar-middle" src="images/logo.png" width="200">
+            <br/><br/>
+            <form action="j_security_check" method="POST">
+
+                <input type="text" name="j_username" placeholder="Username" required>
+
+                <input type="password" name="j_password" placeholder="Password" required>
+                <br/><br/>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
 
 
-</body>
-</html>
+

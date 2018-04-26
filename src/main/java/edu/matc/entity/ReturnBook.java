@@ -8,9 +8,9 @@ import java.util.Objects;
 /**
  * The type Issue book.
  */
-@Entity(name = "IssueBook")
-@Table(name = "issueBook")
-public class IssueBook {
+@Entity(name = "ReturnBook")
+@Table(name = "returnBook")
+public class ReturnBook {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -24,12 +24,14 @@ public class IssueBook {
     private String isbn;
 
     @ManyToOne
-    private Book book;
+            @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "issue"))
+    private User user;
 
     /**
      * Instantiates a new Issue book.
      */
-    public IssueBook() {
+    public ReturnBook() {
     }
 
     /**
@@ -38,14 +40,15 @@ public class IssueBook {
      * @param email    the email
      * @param phone    the phone
      * @param fullName the full name
-     * @param book     the book
+     * @param isbn     the isbn
+     * @param user     the user
      */
-    public IssueBook(String email, String phone, String fullName, String isbn, Book book) {
+    public ReturnBook(String email, String phone, String fullName, String isbn, User user) {
         this.email = email;
         this.phone = phone;
         this.fullName = fullName;
         this.isbn = isbn;
-        this.book = book;
+        this.user = user;
     }
 
     /**
@@ -102,10 +105,20 @@ public class IssueBook {
         this.phone = phone;
     }
 
+    /**
+     * Gets isbn.
+     *
+     * @return the isbn
+     */
     public String getIsbn() {
         return isbn;
     }
 
+    /**
+     * Sets isbn.
+     *
+     * @param isbn the isbn
+     */
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
@@ -128,33 +141,23 @@ public class IssueBook {
         this.fullName = fullName;
     }
 
-    /**
-     * Gets book.
-     *
-     * @return the book
-     */
-    public Book getBook() {
-        return book;
+    public User getUser() {
+        return user;
     }
 
-    /**
-     * Sets book.
-     *
-     * @param book the book
-     */
-    public void setBook(Book book) {
-        this.book = book;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
     public String toString() {
-        return "IssueBook{" +
+        return "ReturnBook{" +
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", book=" + book +
+                //", user=" + user +
                 '}';
     }
 
@@ -163,18 +166,18 @@ public class IssueBook {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        IssueBook issueBook = (IssueBook) o;
+        ReturnBook returnBook = (ReturnBook) o;
 
-        return id == issueBook.id &&
-                Objects.equals(email, issueBook.email) &&
-                Objects.equals(phone, issueBook.phone) &&
-                Objects.equals(fullName, issueBook.fullName) &&
-                Objects.equals(isbn, issueBook.isbn) &&
-                Objects.equals(book, issueBook.book);
+        return id == returnBook.id &&
+                Objects.equals(email, returnBook.email) &&
+                Objects.equals(phone, returnBook.phone) &&
+                Objects.equals(fullName, returnBook.fullName) &&
+                Objects.equals(isbn, returnBook.isbn); //&&
+                //Objects.equals(user, returnBook.user);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email, phone, fullName, isbn, book);
+        return Objects.hash(id, email, phone, fullName, isbn); //, user);
     }
 }

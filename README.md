@@ -3,11 +3,11 @@
 
 #### Problem Statement
 
-It is hard keeping track of what people borrowed. Even when it is written down on paper, it could be lost. When multiple people issueBook
-multiple items, it may get hard to remember who has issueBook and return what item. iBookTracker will do exactly that, focus to 
-maintain the records of the issueBook and return item from the user.
+It is hard keeping track of what people borrowed. Even when it is written down on paper, it could be lost. When multiple people returnBook
+multiple items, it may get hard to remember who has returnBook and return what item. iBookTracker will do exactly that, focus to 
+maintain the records of the returnBook and return item from the user.
 
-iBookTracker will automatically track people when they issueBook, return, and will also check available items.
+iBookTracker will automatically track people when they returnBook, return, and will also check available items.
  
 #### Project Technologies/Techniques
 

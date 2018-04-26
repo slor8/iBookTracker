@@ -30,7 +30,7 @@ public class AddUser extends HttpServlet {
         GenericDao userDao = new GenericDao(User.class);
 
         String userId = req.getParameter("id");
-        //int id = Integer.parseInt(userId);
+        //int id = Integer.parseInt(userId)
 
         String name = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");

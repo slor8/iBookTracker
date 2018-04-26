@@ -1,0 +1,1 @@
+INSERT INTO iBookTracker.role (role_name, user_name, user_id) VALUES ('admin', 'slor', 19);

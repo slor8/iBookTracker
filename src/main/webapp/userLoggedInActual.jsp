@@ -1,39 +1,21 @@
-<!--<div class="jumbotron">
-    <div class="container">
-        <h2>Welcome User</h2>
-    </div>
+<%@include file="taglib.jsp"%>
 
-</div>
--->
-
-<div class="container">
-    <form action="logOut" method="GET">
-        <button class="btn btn-danger logOut" type="submit">Log Out</button>
-    </form>
-</div>
-<div class="container">
-    <div class="login-container">
-        <div class="form-box">
-            <form action="searchBooks" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">Search Book</button>
-            </form>
-            <!--
-            <form action="addBook.jsp" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">Add Books</button>
-            </form>
-            <form action="viewBook" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">View Books</button>
-            </form>
-            -->
-            <form action="checkOutBook.jsp" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">Issue Book</button>
-            </form>
-            <form action="viewIssueBook" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">View Issue Books</button>
-            </form>
-            <form action="returnBook" method="GET">
-                <button class="btn btn-info btn-block login" type="submit">Return Book</button>
-            </form>
+<head role="banner">
+    <nav id="navbar-primary" class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="searchBooks.jsp">Search</a></li>
+                    <li><a href="addBook.jsp">Add Book</a></li>
+                    <li><a href="viewBook">View Books</a></li>
+                    <li><img id="logo-navbar-middle" src="images/logo.png" width="200"></li>
+                    <li><a href="checkOutBook.jsp">Issue Book</a></li>
+                    <li><a href="viewIssueBook">View Issue Books</a></li>
+                    <li><a href="returnBook">Return Book</a></li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</div>
+    </nav>
+</head>
+

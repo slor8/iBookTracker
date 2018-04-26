@@ -12,7 +12,13 @@
 | Week 7 | Videos, activity, reading, and exercise| 5|
 | Week 8 | Videos, activity, reading, and exercise| 4|  
 | Week 9 | Videos, activity, reading, and exercise| 3| 
-| Week 10 | Videos, activity, reading, and exercise| | 
+| Week 10 | Videos, activity, reading, and exercise| 1.5|
+| Week 11 | Videos, activity, reading, and exercise| 2|
+| Week 12 | Team Work| 3|
+| Week 13 | Videos, activity, reading, and exercise| 2| 
+| Week 14 | | |
+| Week 15 | | |
+| Week 16 | e| |
 
 
 

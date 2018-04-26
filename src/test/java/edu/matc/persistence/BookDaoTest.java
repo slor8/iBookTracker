@@ -72,16 +72,15 @@ class BookDaoTest {
 
         GenericDao userDao = new GenericDao(User.class);
 
+        // User_id # 1 add book
         User user = (User)userDao.getById(1);
-        Book newBook = new Book("Head First PHP & MySQL", "Lynn Beighley & Michael Morrison", "978-0-596-00630-3", user);
+        Book newBook = new Book(user, "Head First PHP & MySQL", "Lynn Beighley & Michael Morrison", "978-0-596-00630-3");
         user.addBook(newBook);
 
+        // test
         int id = genericDao.insert(newBook);
-
         assertNotEquals(0, id);
-
         Book insertedBook = (Book)genericDao.getById(id);
-
         assertEquals("Head First PHP & MySQL", insertedBook.getTitle());
         assertNotNull(insertedBook.getUser());
         assertEquals("Joe", insertedBook.getUser().getFirstName());

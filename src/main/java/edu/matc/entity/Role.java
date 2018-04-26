@@ -16,7 +16,7 @@ public class Role {
 
     @ManyToOne
     @JoinColumn(name = "user_id",
-            foreignKey = @ForeignKey(name = "role_user_user_id_fk")
+            foreignKey = @ForeignKey(name = "role_user_fk")
     )
     private User user;
 
@@ -69,7 +69,7 @@ public class Role {
 
     @Override
     public String toString() {
-        return "UserRole{" +
+        return "Role{" +
                 "id=" + id +
                 ", user=" + user +
                 ", userName='" + userName + '\'' +

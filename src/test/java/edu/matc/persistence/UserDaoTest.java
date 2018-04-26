@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.Book;
+import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -83,13 +84,34 @@ class UserDaoTest {
 
         User newUser = new User("Fred", "Flintstone", "fflintstone", "password");
 
+        // test
+        int id = genericDao.insert(newUser);
+        assertNotEquals(0, id);
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals("Fred", insertedUser.getFirstName());
+    }
+
+
+    @Test
+    void insertWithRoleSuccess() {
+
+        String userName = "admin2";
+        User newUser = new User("Admin2", "Admin2", userName, "admin2");
+
+
+        String roleName = "admin";
+        Role role = new Role(newUser, roleName, userName);
+
+        newUser.addRole(role);
+
         int id = genericDao.insert(newUser);
 
         assertNotEquals(0, id);
-
         User insertedUser = (User)genericDao.getById(id);
+        assertEquals(newUser, insertedUser);
+        assertEquals(1, insertedUser.getRoles().size());
 
-        assertEquals("Fred", insertedUser.getFirstName());
+
     }
 
 
@@ -104,7 +126,7 @@ class UserDaoTest {
         String bookTitle = "The Hunger Games";
         String bookAuthor = "Suzanne Collins";
         String bookIsbn = "978-0-439-02352-8";
-        Book book = new Book(bookTitle, bookAuthor, bookIsbn, newUser);
+        Book book = new Book(newUser, bookTitle, bookAuthor, bookIsbn);
 
         newUser.addBook(book);
 

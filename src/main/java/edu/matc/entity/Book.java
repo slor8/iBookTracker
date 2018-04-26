@@ -3,6 +3,7 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -17,19 +18,23 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
+    //@Column(name = "id")
     private int id;
 
+    //@Column(name = "title")
     private String title;
 
+    //@Column(name = "author")
     private String author;
 
+    //@Column(name = "isbn")
     private String isbn;
 
-    @ManyToOne
+    @ManyToOne      // foreign key to User
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "book_user_fk")
+    )
     private User user;
-
-    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<IssueBook> issueBooks = new HashSet<>();
 
 
     /**
@@ -46,11 +51,11 @@ public class Book {
      * @param isbn   the isbn
      * @param user   the user
      */
-    public Book(String title, String author, String isbn, User user) {
+    public Book(User user, String title, String author, String isbn) {
+        this.user = user;
         this.title = title;
         this.author = author;
         this.isbn = isbn;
-        this.user = user;
     }
 
     /**
@@ -143,43 +148,6 @@ public class Book {
         this.user = user;
     }
 
-    /**
-     * Gets issue books.
-     *
-     * @return the issue books
-     */
-    public Set<IssueBook> getIssueBooks() {
-        return issueBooks;
-    }
-
-    /**
-     * Sets issue books.
-     *
-     * @param issueBooks the issue books
-     */
-    public void setIssueBooks(Set<IssueBook> issueBooks) {
-        this.issueBooks = issueBooks;
-    }
-
-    /**
-     * Add issue book.
-     *
-     * @param issueBook the issue book
-     */
-    public void addIssueBook(IssueBook issueBook) {
-        issueBooks.add(issueBook);
-        issueBook.setBook(this);
-    }
-
-    /**
-     * Remove issue book.
-     *
-     * @param issueBook the issue book
-     */
-    public void removeIssueBook(IssueBook issueBook) {
-        issueBooks.remove(issueBook);
-        issueBook.setBook(null);
-    }
 
     @Override
     public String toString() {
@@ -188,7 +156,7 @@ public class Book {
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", user=" + user +
+                //", user=" + user +
                 '}';
     }
 
@@ -201,13 +169,13 @@ public class Book {
         return id == book.id &&
                 Objects.equals(title, book.title) &&
                 Objects.equals(author, book.author) &&
-                Objects.equals(isbn, book.isbn) &&
-                Objects.equals(user, book.user);
+                Objects.equals(isbn, book.isbn); //&&
+                //Objects.equals(user, book.user);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, title, author, isbn, user);
+        return Objects.hash(id, title, author, isbn ); //, user);
     }
 }

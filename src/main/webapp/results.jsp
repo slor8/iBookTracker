@@ -28,8 +28,8 @@
                 <td>${user.email}</td>
                 <td>${user.phone}</td>
                 <td>
-                    <c:forEach var="issueBook" items="${user.issueBooks}">
-                        ${issueBook.id} ${issueBook.isbn}<br/>
+                    <c:forEach var="returnBook" items="${user.returnBooks}">
+                        ${returnBook.id} ${returnBook.isbn}<br/>
                     </c:forEach>
                 </td>
             </tr>

@@ -34,8 +34,17 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    // one user can have multiple books
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Book> books = new HashSet<>();
+
+    // one user can have multiple roles
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
+
+    // one user can return multiple books
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<ReturnBook> returnBooks = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -168,6 +177,14 @@ public class User {
     }
 
 
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
     /**
      * Add book.
      *
@@ -187,6 +204,55 @@ public class User {
         books.remove(book);
         book.setUser(null);
     }
+
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
+    }
+
+    /**
+     * Gets issue books.
+     *
+     * @return the issue books
+     */
+    public Set<ReturnBook> getReturnBooks() {
+        return returnBooks;
+    }
+
+    /**
+     * Sets issue books.
+     *
+     * @param returnBooks the issue books
+     */
+    public void setReturnBooks(Set<ReturnBook> returnBooks) {
+        this.returnBooks = returnBooks;
+    }
+
+    /**
+     * Add issue book.
+     *
+     * @param returnBook the issue book
+     */
+    public void addReturnBook(ReturnBook returnBook) {
+        returnBooks.add(returnBook);
+        returnBook.setUser(this);
+    }
+
+    /**
+     * Remove issue book.
+     *
+     * @param returnBook the issue book
+     */
+    public void removeReturnBook(ReturnBook returnBook) {
+        returnBooks.remove(returnBook);
+        returnBook.setUser(null);
+    }
+
 
     @Override
     public String toString() {

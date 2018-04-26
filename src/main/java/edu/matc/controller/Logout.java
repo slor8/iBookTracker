@@ -14,11 +14,12 @@ import java.io.IOException;
 
 public class Logout extends HttpServlet {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+                throws ServletException, IOException {
 
         req.getSession().invalidate();
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("logout.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
         dispatcher.forward(req, resp);
     }
 }

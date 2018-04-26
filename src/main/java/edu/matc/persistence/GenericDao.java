@@ -136,6 +136,22 @@ public class GenericDao<T> {
         return entity;
     }
 
+
+    public List<T> getUserID(String value) {
+
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        Expression<String> propertyPath = root.get("userName");
+        query.where(builder.like(propertyPath, "%" + value + "%"));
+        List<T> userID = session.createQuery(query).getResultList();
+        session.close();
+        return userID;
+    }
+
+
+
     /**
      * Save or update.
      *

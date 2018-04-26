@@ -1,23 +1,10 @@
 package edu.matc.controller;
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
 
-
+@Path("/book")
 public class SearchBook {
 
 
-
-
-
-
-    /**
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchBooks.jsp");
-        dispatcher.forward(req, resp);
-    }
-
-     **/
 }
-
-
-// https://developers.google.com/api-client-library/java/apis/books/v1 -> Search For Book
