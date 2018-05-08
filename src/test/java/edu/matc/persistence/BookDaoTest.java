@@ -49,7 +49,7 @@ class BookDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Book> books = genericDao.getByPropertyLike("author", "e");
+        List<Book> books = genericDao.getByPropertyLike("title", "e");
         assertEquals(3, books.size());
 
     }
@@ -59,7 +59,7 @@ class BookDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Book> books = genericDao.getByPropertyEqual("author", "E. B. White");
+        List<Book> books = genericDao.getByPropertyEqual("title", "Charlotte's Web");
         assertEquals(1, books.size());
         assertEquals(1, books.get(0).getId());
     }
@@ -72,9 +72,10 @@ class BookDaoTest {
 
         GenericDao userDao = new GenericDao(User.class);
 
+
         // User_id # 1 add book
         User user = (User)userDao.getById(1);
-        Book newBook = new Book(user, "Head First PHP & MySQL", "Lynn Beighley & Michael Morrison", "978-0-596-00630-3");
+        Book newBook = new Book(user, "Head First PHP & MySQL");
         user.addBook(newBook);
 
         // test
@@ -93,18 +94,18 @@ class BookDaoTest {
     @Test
     void deleteSuccess() {
 
-        genericDao.delete(genericDao.getById(3));
-        assertNull(genericDao.getById(3));
+        genericDao.delete(genericDao.getById(1));
+        assertNull(genericDao.getById(1));
     }
 
     /**
      * Update sucess.
      */
     @Test
-    void updateSucess() {
-        String newLastName = "Wright";
+    void updateSuccess() {
+        String newTitle = "Sold";
         Book bookToUpdate = (Book)genericDao.getById(3);
-        bookToUpdate.setAuthor(newLastName);
+        bookToUpdate.setTitle(newTitle);
         genericDao.saveOrUpdate(bookToUpdate);
         Book retrievedBook = (Book)genericDao.getById(3);
         assertEquals(bookToUpdate, retrievedBook);

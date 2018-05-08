@@ -1,4 +1,5 @@
 <%@include file="taglib.jsp"%>
+<c:set var="title" value="Add User" />
 <%@include file="head.jsp"%>
 
 <head role="banner">
@@ -21,10 +22,11 @@
         <h3>- Add User -</h3>
         <hr/>
         <form action="addUser" method="POST">
-            <label></label><input type="text" name="firstName" id="firstName" placeholder="First Name" required>
-            <label></label><input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
-            <label></label><input type="text" name="userName" id="userName" placeholder="Username" required>
-            <label></label><input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="text" name="userName" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="role" placeholder="User Role" required />
             <br/><br/>
             <button type="submit">Add</button>
         </form>

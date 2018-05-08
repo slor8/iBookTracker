@@ -1,5 +1,5 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="Adding User SuccessFul" />
+<c:set var="title" value="Update User" />
 <%@include file="head.jsp"%>
 
 <head role="banner">
@@ -17,9 +17,19 @@
     </nav>
 </head>
 
-
 <div class="container">
-    <div class="alert alert-success">
-        <strong>Successfully!</strong> Registered a new iBookTracker User!
+    <div class="login-container">
+        <h3>-- Update User --</h3>
+        <hr/>
+        <form action="updateUser" method="post">
+            <input type="hidden" name="id" value="${userId.id}" />
+            <input type="text" value="${userId.firstName}" name="firstName" />
+            <input type="text" value="${userId.lastName}" name="lastName" />
+            <input type="text" value="${userId.userName}" name="userName" />
+            <input type="password" value="${userId.password}" name="password" />
+            <br/><br/>
+            <button type="submit">Update & Save</button>
+        </form>
     </div>
 </div>
+

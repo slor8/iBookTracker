@@ -3,14 +3,15 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  * The type Issue book.
  */
-@Entity(name = "ReturnBook")
-@Table(name = "returnBook")
-public class ReturnBook {
+@Entity(name = "IssueBook")
+@Table(name = "issueBook")
+public class IssueBook {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -21,17 +22,18 @@ public class ReturnBook {
     private String phone;
 
     private String fullName;
-    private String isbn;
+    private String title;
 
     @ManyToOne
-            @JoinColumn(name = "user_id",
-            foreignKey = @ForeignKey(name = "issue"))
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "returnBook_user_fk")
+    )
     private User user;
 
     /**
      * Instantiates a new Issue book.
      */
-    public ReturnBook() {
+    public IssueBook() {
     }
 
     /**
@@ -40,14 +42,14 @@ public class ReturnBook {
      * @param email    the email
      * @param phone    the phone
      * @param fullName the full name
-     * @param isbn     the isbn
+     * @param title    the isbn
      * @param user     the user
      */
-    public ReturnBook(String email, String phone, String fullName, String isbn, User user) {
+    public IssueBook(String email, String phone, String fullName, String title, User user) {
         this.email = email;
         this.phone = phone;
         this.fullName = fullName;
-        this.isbn = isbn;
+        this.title = title;
         this.user = user;
     }
 
@@ -105,23 +107,6 @@ public class ReturnBook {
         this.phone = phone;
     }
 
-    /**
-     * Gets isbn.
-     *
-     * @return the isbn
-     */
-    public String getIsbn() {
-        return isbn;
-    }
-
-    /**
-     * Sets isbn.
-     *
-     * @param isbn the isbn
-     */
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
 
     /**
      * Gets full name.
@@ -132,9 +117,18 @@ public class ReturnBook {
         return fullName;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     /**
      * Sets full name.
      *
+
      * @param fullName the full name
      */
     public void setFullName(String fullName) {
@@ -151,13 +145,12 @@ public class ReturnBook {
 
     @Override
     public String toString() {
-        return "ReturnBook{" +
+        return "IssueBook{" +
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fullName='" + fullName + '\'' +
-                ", isbn='" + isbn + '\'' +
-                //", user=" + user +
+                ", title='" + title + '\'' +
                 '}';
     }
 
@@ -166,18 +159,17 @@ public class ReturnBook {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        ReturnBook returnBook = (ReturnBook) o;
+        IssueBook issueBook = (IssueBook) o;
 
-        return id == returnBook.id &&
-                Objects.equals(email, returnBook.email) &&
-                Objects.equals(phone, returnBook.phone) &&
-                Objects.equals(fullName, returnBook.fullName) &&
-                Objects.equals(isbn, returnBook.isbn); //&&
-                //Objects.equals(user, returnBook.user);
+        return id == issueBook.id &&
+                Objects.equals(email, issueBook.email) &&
+                Objects.equals(phone, issueBook.phone) &&
+                Objects.equals(fullName, issueBook.fullName) &&
+                Objects.equals(title, issueBook.title);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email, phone, fullName, isbn); //, user);
+        return Objects.hash(id, email, phone, fullName, title);
     }
 }

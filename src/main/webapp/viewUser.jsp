@@ -20,15 +20,14 @@
     <body>
         <div class="container-fluid">
             <table id="userTable" class="display" cellspacing="0" width="100%">
-                <tr>
+                <thead>
                     <th>Id</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Username</th>
                     <th>Password</th>
                     <th>Action</th>
-                </tr>
-
+                </thead>
                 <tbody>
                     <c:forEach var="user" items="${users}">
                         <tr>
@@ -38,8 +37,9 @@
                             <td>${user.userName}</td>
                             <td>${user.password}</td>
                             <td>
-                                <a href='updateUser?id=${user.id}'>Update</a>
-                                <a href='deleteUser?id=${user.id}'>Delete</a></td>
+                                <a href='updateUser2?id=${user.id}'>Update</a>
+                                <a href='deleteUser?id=${user.id}'>Delete</a>
+                            </td>
                         </tr>
                     </c:forEach>
                 </tbody>

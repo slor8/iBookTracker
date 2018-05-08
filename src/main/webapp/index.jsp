@@ -5,7 +5,7 @@
 
     <body>
 
-        <c:import url="indexActual.jsp" />
+       <c:import url="indexActual.jsp" />
 
     </body>
 </html>

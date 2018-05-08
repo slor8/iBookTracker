@@ -3,6 +3,9 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity(name = "Role")

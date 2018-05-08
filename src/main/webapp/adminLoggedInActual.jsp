@@ -1,4 +1,6 @@
 <%@include file="taglib.jsp"%>
+<c:set var="title" value="Welcome Admin" />
+<c:import url="head.jsp"/>
 
 <head role="banner">
     <nav id="navbar-primary" class="navbar" role="navigation">

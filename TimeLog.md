@@ -16,9 +16,12 @@
 | Week 11 | Videos, activity, reading, and exercise| 2|
 | Week 12 | Team Work| 3|
 | Week 13 | Videos, activity, reading, and exercise| 2| 
-| Week 14 | | |
-| Week 15 | | |
-| Week 16 | e| |
+| Week 14 | Individual Project| |
+| Week 15 | Individual Project| |
+| Week 16 | Individual Project| |
+
+
+
 
 
 

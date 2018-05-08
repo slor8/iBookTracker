@@ -1,6 +1,5 @@
 package edu.matc.entity;
 
-
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -8,11 +7,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-/**
- * A class to represent a user.
- *
- * @author slor
- */
+
 @Entity (name = "User")
 @Table (name = "user")
 public class User {
@@ -44,7 +39,7 @@ public class User {
 
     // one user can return multiple books
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<ReturnBook> returnBooks = new HashSet<>();
+    private Set<IssueBook> issueBooks = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -220,37 +215,37 @@ public class User {
      *
      * @return the issue books
      */
-    public Set<ReturnBook> getReturnBooks() {
-        return returnBooks;
+    public Set<IssueBook> getIssueBooks() {
+        return issueBooks;
     }
 
     /**
      * Sets issue books.
      *
-     * @param returnBooks the issue books
+     * @param issueBooks the issue books
      */
-    public void setReturnBooks(Set<ReturnBook> returnBooks) {
-        this.returnBooks = returnBooks;
+    public void setIssueBooks(Set<IssueBook> issueBooks) {
+        this.issueBooks = issueBooks;
     }
 
     /**
      * Add issue book.
      *
-     * @param returnBook the issue book
+     * @param issueBook the issue book
      */
-    public void addReturnBook(ReturnBook returnBook) {
-        returnBooks.add(returnBook);
-        returnBook.setUser(this);
+    public void addReturnBook(IssueBook issueBook) {
+        issueBooks.add(issueBook);
+        issueBook.setUser(this);
     }
 
     /**
      * Remove issue book.
      *
-     * @param returnBook the issue book
+     * @param issueBook the issue book
      */
-    public void removeReturnBook(ReturnBook returnBook) {
-        returnBooks.remove(returnBook);
-        returnBook.setUser(null);
+    public void removeReturnBook(IssueBook issueBook) {
+        issueBooks.remove(issueBook);
+        issueBook.setUser(null);
     }
 
 

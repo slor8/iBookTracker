@@ -1,5 +1,8 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Book;
+import edu.matc.persistence.GenericDao;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,15 +12,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(
-        urlPatterns = {"/login"}
+        urlPatterns = {"/viewSearchBook"}
 )
 
-public class Login extends HttpServlet {
+public class ViewSearchBook extends HttpServlet{
 
-    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("loginSuccess.jsp");
+        GenericDao bookDao = new GenericDao(Book.class);
+
+        req.setAttribute("books", bookDao.getAll());
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/viewSearchBook.jsp");
+
         dispatcher.forward(req, resp);
+
     }
 }

@@ -1,7 +1,6 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.Book;
-import edu.matc.entity.ReturnBook;
+import edu.matc.entity.IssueBook;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * The type Issue book dao test.
  */
-public class ReturnBookDaoTest {
+public class IssueBookDaoTest {
 
     /**
      * The Generic dao.
@@ -27,7 +26,7 @@ public class ReturnBookDaoTest {
      */
     @BeforeEach
     void setUp() {
-        genericDao = new GenericDao(ReturnBook.class);
+        genericDao = new GenericDao(IssueBook.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -38,8 +37,8 @@ public class ReturnBookDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<ReturnBook> returnBooks = genericDao.getAll();
-        assertEquals(2, returnBooks.size());
+        List<IssueBook> issueBooks = genericDao.getAll();
+        assertEquals(2, issueBooks.size());
     }
 
     /**
@@ -47,7 +46,7 @@ public class ReturnBookDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        ReturnBook retrievedOrder = (ReturnBook) genericDao.getById(1);
+        IssueBook retrievedOrder = (IssueBook) genericDao.getById(1);
         assertNotNull(retrievedOrder);
         assertEquals("jcoyne@gmail.com", retrievedOrder.getEmail());
     }
@@ -61,16 +60,16 @@ public class ReturnBookDaoTest {
         GenericDao userDao = new GenericDao(User.class);
 
         User user = (User)userDao.getById(1);
-        ReturnBook newReturnBook = new ReturnBook("jcoyne@gmail.com", "354-453-4534", "Joe Coyne", "78626587510", user);
-        user.addReturnBook(newReturnBook);
+        IssueBook newIssueBook = new IssueBook("jcoyne@gmail.com", "354-453-4534", "Joe Coyne", "78626587510", user);
+        user.addReturnBook(newIssueBook);
 
         // test
-        int id = genericDao.insert(newReturnBook);
+        int id = genericDao.insert(newIssueBook);
         assertNotEquals(0,id);
-        ReturnBook insertedReturnBook = (ReturnBook) genericDao.getById(id);
-        assertEquals("jcoyne@gmail.com", insertedReturnBook.getEmail());
-        assertNotNull(insertedReturnBook.getUser());
-        assertEquals("jcoyne", insertedReturnBook.getUser().getUserName());
+        IssueBook insertedIssueBook = (IssueBook) genericDao.getById(id);
+        assertEquals("jcoyne@gmail.com", insertedIssueBook.getEmail());
+        assertNotNull(insertedIssueBook.getUser());
+        assertEquals("jcoyne", insertedIssueBook.getUser().getUserName());
 
     }
 
@@ -89,11 +88,11 @@ public class ReturnBookDaoTest {
     @Test
     void updateSuccess() {
         String phone = "999-999-9999";
-        ReturnBook returnBookToUpdate = (ReturnBook)genericDao.getById(2);
-        returnBookToUpdate.setPhone(phone);
-        genericDao.saveOrUpdate(returnBookToUpdate);
-        ReturnBook retrievedReturnBook = (ReturnBook)genericDao.getById(2);
-        assertEquals(returnBookToUpdate, retrievedReturnBook);
+        IssueBook issueBookToUpdate = (IssueBook)genericDao.getById(2);
+        issueBookToUpdate.setPhone(phone);
+        genericDao.saveOrUpdate(issueBookToUpdate);
+        IssueBook retrievedIssueBook = (IssueBook)genericDao.getById(2);
+        assertEquals(issueBookToUpdate, retrievedIssueBook);
     }
 
 
@@ -102,9 +101,9 @@ public class ReturnBookDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<ReturnBook> returnBooks = genericDao.getByPropertyEqual("phone", "608-353-3501");
-        assertEquals(1, returnBooks.size());
-        assertEquals(1, returnBooks.get(0).getId());
+        List<IssueBook> issueBooks = genericDao.getByPropertyEqual("phone", "608-353-3501");
+        assertEquals(1, issueBooks.size());
+        assertEquals(1, issueBooks.get(0).getId());
     }
 
     /**
@@ -112,8 +111,8 @@ public class ReturnBookDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<ReturnBook> returnBooks = genericDao.getByPropertyLike("phone", "608");
-        assertEquals(2, returnBooks.size());
+        List<IssueBook> issueBooks = genericDao.getByPropertyLike("phone", "608");
+        assertEquals(2, issueBooks.size());
     }
 
 

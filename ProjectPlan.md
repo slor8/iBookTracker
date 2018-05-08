@@ -45,7 +45,7 @@
 - [X] Add view and add functionality in jsp for user
 - [X] Build the book jsp
 - [X] Add view and add functionality in jsp for user
-- [X] Build the returnBook jsp
+- [X] Build the issueBook jsp
 - [X] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, 
 DAO is unit tested, Log4J is implemented (no System.out.println), class design and any other diagrams you plan
 to use have been created.
@@ -56,19 +56,19 @@ to use have been created.
 - [X] Set up authentication locally
 - [X] Set up authentication on AWS
 - [X] Add the Book and IssueBook
-- [X] Create book and returnBook entities
+- [X] Create book and issueBook entities
 - [X] Update view IssueBook 
 - [X] Review and incorporate any feedback from Checkpoint 2.
 
 ### Week 8
 - [X] Weekly journal entry
 - [X] Create book report table
-- [X] Create returnBook report table
+- [X] Create issueBook report table
 - [X] Add the book report entity
 - [X] Create the book DAO and unit tests
-- [X] Create the returnBook DAO and unit tests
+- [X] Create the issueBook DAO and unit tests
 - [X] Build the book jsp
-- [X] Build the returnBook jsp
+- [X] Build the issueBook jsp
 - [X] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that display data from the database is implemented.
 
 ### Week 9
@@ -92,13 +92,13 @@ to use have been created.
 ### Week 13
 - [X] Weekly journal entry
 - [X] Complete ToDo identified in week 12
-- [ ] Prepared for week 13 peer code reviews
-- [ ] Code quality check
-- [ ] Review rubric to make sure I'm on target
+- [X] Prepared for week 13 peer code reviews
+- [X] Code quality check
+- [X] Review rubric to make sure I'm on target
 
 ### Week 14
 - [X] Weekly journal entry
-- [ ] Create final presentation
+- [X] Create final presentation
 
 
 ### Week 15

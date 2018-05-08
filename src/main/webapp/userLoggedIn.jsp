@@ -1,5 +1,6 @@
 <%@include file="taglib.jsp" %>
-<c:import url="head.jsp"/>
+<c:set var="title" value="User Logged-In" />
+<%@include file="head.jsp"%>
 <html>
 
 <title>Welcome</title>

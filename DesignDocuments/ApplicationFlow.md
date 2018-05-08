@@ -52,16 +52,16 @@
 1. Details are sent to Borrows Book Servlet
 1. Servlet create Borrow Book report object
 1. Servlet sends object to dao
-1. Dao adds returnBook book to the database
-1. Servlet sends confirmation to returnBook book page that returnBook book has been added.
+1. Dao adds issueBook book to the database
+1. Servlet sends confirmation to issueBook book page that issueBook book has been added.
 
 ### View Borrow Book
-1. Page sends a request to view returnBook book servlet along with criteria(all).
-1. Servlet uses the returnBook dao to select book according to criteria
-1. Dao performs select and creates returnBook object from results.
-1. Dao returns list of returnBook book by user.
-1. Servlet sends list back to returnBook jsp.
-1. Borrow reports jsp display the returnBook.
+1. Page sends a request to view issueBook book servlet along with criteria(all).
+1. Servlet uses the issueBook dao to select book according to criteria
+1. Dao performs select and creates issueBook object from results.
+1. Dao returns list of issueBook book by user.
+1. Servlet sends list back to issueBook jsp.
+1. Borrow reports jsp display the issueBook.
 1. Consider paging results so page does not get long and too much data is sent.
 
 ### Return Book

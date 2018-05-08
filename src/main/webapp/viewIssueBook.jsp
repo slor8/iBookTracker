@@ -1,4 +1,5 @@
 <%@include file="taglib.jsp"%>
+<c:set var="title" value="View Check-Out Book" />
 <%@include file="head.jsp"%>
 
 <script type="text/javascript" class="init">
@@ -6,6 +7,8 @@
         $('#userTable').DataTable();
     } );
 </script>
+<html>
+<body>
 
 <head role="banner">
     <nav id="navbar-primary" class="navbar" role="navigation">
@@ -13,13 +16,10 @@
             <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="searchBooks.jsp">Search</a></li>
-                    <li><a href="addBook.jsp">Add Book</a></li>
-                    <li><a href="viewBook">View Books</a></li>
+                    <li><a href="checkOutBook.jsp">Check Out</a></li>
                     <li><img id="logo-navbar-middle" src="images/logo.png" width="200"></li>
-                    <li><a href="checkOutBook.jsp">Issue Book</a></li>
-                    <li><a href="viewIssueBook">View Issue Books</a></li>
-                    <li><a href="returnBook">Return Book</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="viewIssueBook">View Check Out</a></li>
+                    <li><a href="logout">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -29,25 +29,32 @@
 <div class="container-fluid">
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
+            <th>Id</th>
             <th>Name</th>
-            <th>Isbn</th>
+            <th>Username</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Isbn</th>
+            <th>Return Book</th>
         </thead>
         <tbody>
-        <c:forEach var="book" items="${books}">
+        <c:forEach var="issue" items="${issueBooks}">
             <tr>
-                <c:forEach var="returnBook" items="${book.returnBooks}">
-                    <tr>
-                    <td>${returnBook.fullName}</td>
-                    <td>${returnBook.isbn}</td>
-                    <td>${returnBook.email}</td>
-                    <td>${returnBook.phone}</td>
-                    </tr>
-                </c:forEach>
+                <td>${issue.id}</td>
+                <td>${issue.fullName}</td>
+                <td>${pageContext.request.remoteUser}</td>
+                <td>${issue.email}</td>
+                <td>${issue.phone}</td>
+                <td>${issue.isbn}</td>
+                <td>
+                    <a href='returnBook?id=${issue.id}'>Return Book</a>
+                </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
+
 </div>
 
+</body>
+</html>

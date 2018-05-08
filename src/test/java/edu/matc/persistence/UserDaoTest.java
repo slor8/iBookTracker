@@ -124,9 +124,7 @@ class UserDaoTest {
         User newUser = new User("Ryan", "Flintston", "rflintstone", "password");
 
         String bookTitle = "The Hunger Games";
-        String bookAuthor = "Suzanne Collins";
-        String bookIsbn = "978-0-439-02352-8";
-        Book book = new Book(newUser, bookTitle, bookAuthor, bookIsbn);
+        Book book = new Book(newUser, bookTitle);
 
         newUser.addBook(book);
 
@@ -144,7 +142,6 @@ class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-
         genericDao.delete(genericDao.getById(3));
         assertNull(genericDao.getById(3));
     }

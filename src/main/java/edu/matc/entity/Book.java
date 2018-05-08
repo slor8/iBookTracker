@@ -3,14 +3,8 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
-/**
- * The type Book.
- */
 @Entity(name = "Book")
 @Table(name = "book")
 public class Book {
@@ -18,17 +12,10 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
-    //@Column(name = "id")
     private int id;
 
-    //@Column(name = "title")
     private String title;
 
-    //@Column(name = "author")
-    private String author;
-
-    //@Column(name = "isbn")
-    private String isbn;
 
     @ManyToOne      // foreign key to User
     @JoinColumn(name = "user_id",
@@ -37,113 +24,40 @@ public class Book {
     private User user;
 
 
-    /**
-     * Instantiates a new Book.
-     */
     public Book() {
     }
 
-    /**
-     * Instantiates a new Book.
-     *
-     * @param title  the title
-     * @param author the author
-     * @param isbn   the isbn
-     * @param user   the user
-     */
-    public Book(User user, String title, String author, String isbn) {
+    public Book(User user, String title) {
         this.user = user;
         this.title = title;
-        this.author = author;
-        this.isbn = isbn;
+
     }
 
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
+
     public int getId() {
         return id;
     }
 
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
+
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * Gets title.
-     *
-     * @return the title
-     */
+
     public String getTitle() {
         return title;
     }
 
-    /**
-     * Sets title.
-     *
-     * @param title the title
-     */
+
     public void setTitle(String title) {
         this.title = title;
     }
 
-    /**
-     * Gets author.
-     *
-     * @return the author
-     */
-    public String getAuthor() {
-        return author;
-    }
-
-    /**
-     * Sets author.
-     *
-     * @param author the author
-     */
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    /**
-     * Gets isbn.
-     *
-     * @return the isbn
-     */
-    public String getIsbn() {
-        return isbn;
-    }
-
-    /**
-     * Sets isbn.
-     *
-     * @param isbn the isbn
-     */
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
-    /**
-     * Gets user.
-     *
-     * @return the user
-     */
     public User getUser() {
         return user;
     }
 
-    /**
-     * Sets user.
-     *
-     * @param user the user
-     */
+
     public void setUser(User user) {
         this.user = user;
     }
@@ -154,9 +68,6 @@ public class Book {
         return "Book{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
-                //", user=" + user +
                 '}';
     }
 
@@ -167,15 +78,12 @@ public class Book {
 
         Book book = (Book) o;
         return id == book.id &&
-                Objects.equals(title, book.title) &&
-                Objects.equals(author, book.author) &&
-                Objects.equals(isbn, book.isbn); //&&
-                //Objects.equals(user, book.user);
+                Objects.equals(title, book.title);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, title, author, isbn ); //, user);
+        return Objects.hash(id, title);
     }
 }

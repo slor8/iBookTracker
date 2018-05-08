@@ -1,4 +1,5 @@
 <%@include file="taglib.jsp"%>
+<c:set var="title" value="Check Out Book" />
 <%@include file="head.jsp"%>
 
 <head role="banner">
@@ -7,12 +8,9 @@
             <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="searchBooks.jsp">Search</a></li>
-                    <li><a href="addBook.jsp">Add Book</a></li>
-                    <li><a href="viewBook">View Books</a></li>
+                    <li><a href="checkOutBook.jsp">Check Out</a></li>
                     <li><img id="logo-navbar-middle" src="images/logo.png" width="200"></li>
-                    <li><a href="checkOutBook.jsp">Issue Book</a></li>
-                    <li><a href="viewIssueBook">View Issue Books</a></li>
-                    <li><a href="returnBook">Return Book</a></li>
+                    <li><a href="viewIssueBook">View Check Out</a></li>
                     <li><a href="logout">Logout</a></li>
                 </ul>
             </div>
@@ -20,17 +18,18 @@
     </nav>
 </head>
 
+
 <div class="container">
     <div class="login-container">
-        <h3>- Issue Book -</h3>
+        <h3>- Check-Out-Book -</h3>
         <hr/>
         <form action="checkOutBook" method="POST">
-            <label></label><input type="text" name="fullName" id="name" placeholder="Full Name" required>
-            <label></label><input type="text" name="isbn" id="isbn" placeholder="Isbn" required>
-            <label></label><input type="text" name="email" id="email" placeholder="Email" required>
-            <label></label><input type="text" name="phone" id="phone" placeholder="Phone" required>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="text" name="title" placeholder="Title" required>
             <br/><br/>
-            <button type="submit">Issue Book</button>
+            <button type="submit">Check-Out</button>
         </form>
     </div>
 </div>

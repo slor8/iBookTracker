@@ -1,5 +1,5 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="Check Out Success" />
+<c:set var="title" value="Search Results" />
 <%@include file="head.jsp"%>
 
 <head role="banner">
@@ -18,9 +18,32 @@
     </nav>
 </head>
 
-
 <div class="container">
-    <div class="alert alert-success">
-        <strong>Successfully!</strong> Check-Out Book!
+    <div>
+        <h2>Search For: <small>${searchItem}</small></h2>
     </div>
+    <hr/>
+    <div>
+        <h3>Link found:
+            <small>
+                <a href="https://www.google.com/search?tbm=bks&q=${searchItem}">
+                    Google Book Search
+                </a>
+            </small>
+        </h3>
+    </div>
+    <div>
+        <h3>Primary Book found:</h3>
+        <img src="${imgSrc}"/>
+    </div>
+    <div>
+        <h4>Other Results</h4>
+        <img src="${imgArraySrc[2]}"/>
+        <img src="${imgArraySrc[3]}"/>
+        <img src="${imgArraySrc[4]}"/>
+        <img src="${imgArraySrc[5]}"/>
+    </div>
+
 </div>
+
+
