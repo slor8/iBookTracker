@@ -1,4 +1,5 @@
 <%@include file="taglib.jsp"%>
+<c:set var="title" value="View User" />
 <%@include file="head.jsp"%>
 
 <html>
@@ -7,8 +8,7 @@
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                 <ul class="nav navbar-nav">
-
-                    <li><a href="addUser.jsp">Add User</a></li>
+                    <li><a href="addUser.jsp">Add</a></li>
                     <li><img id="logo-navbar-middle" src="images/logo.png" width="200"></li>
                     <li><a href="viewUser">View User</a></li>
                     <li><a href="logout">Logout</a></li>
@@ -17,6 +17,7 @@
         </div>
     </nav>
 </head>
+
     <body>
         <div class="container-fluid">
             <table id="userTable" class="display" cellspacing="0" width="100%">

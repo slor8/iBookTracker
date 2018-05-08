@@ -1,0 +1,3 @@
+INSERT INTO test_iBookTracker.issueBook (user_id, fullName, email, phone, title) VALUES (1, 'Joe Coyne', 'jcoyne@gmail.com', '608-353-3501', 'Love');
+INSERT INTO test_iBookTracker.issueBook (user_id, fullName, email, phone, title) VALUES (3, 'Karen Mack', 'kmack@gmail.com', '608-242-1120', 'Mockjay');
+INSERT INTO test_iBookTracker.issueBook (user_id, fullName, email, phone, title) VALUES (1, 'Joe Coyne', 'jcoyne@gmail.com', '354-453-4534', '78626587510');

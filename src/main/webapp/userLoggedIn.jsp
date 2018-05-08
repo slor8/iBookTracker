@@ -1,5 +1,5 @@
 <%@include file="taglib.jsp" %>
-<c:set var="title" value="User Logged-In" />
+<c:set var="title" value="Welcome To iBookTracker" />
 <%@include file="head.jsp"%>
 <html>
 

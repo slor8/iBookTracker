@@ -1,6 +1,8 @@
 package edu.matc.controller;
 
-import edu.matc.entity.BookParser;
+import edu.matc.entity.Book;
+import edu.matc.entity.User;
+import edu.matc.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,27 +20,36 @@ import java.util.List;
 
 public class GoogleBook extends HttpServlet {
 
-    BookParser imageParse = new BookParser();
-
-    private String url = "/searchResults.jsp";
+    Book books = new Book();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
 
-        String googleSearch = request.getParameter("imageName");
+        String search = request.getParameter("searchBook");
 
-        List<String> imgArraySrc = imageParse.MultipleImageSearch(googleSearch);
-        String imgSrc = imageParse.ImageSearch(googleSearch);
+        GenericDao bookDao = new GenericDao(Book.class);
+        GenericDao userDao = new GenericDao(User.class);
+        Book book = new Book();
 
+        List<User> userList = userDao.getUserID(request.getRemoteUser());
+        int userId = userList.get(0).getId();
+        User userSearch;
+        userSearch = (User)userDao.getById(userId);
+
+        List<String> bookListSrc = books.BookSearch(search);
 
         HttpSession session = request.getSession();
-        session.setAttribute("searchItem", googleSearch);
-        session.setAttribute("imgArraySrc", imgArraySrc);
-        session.setAttribute("imgSrc", imgSrc);
+        session.setAttribute("search", search);
+        session.setAttribute("bookListSrc", bookListSrc);
 
 
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        book.setTitle(search);
+        book.setUser(userSearch);
+
+        bookDao.insert(book);
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/searchResults.jsp");
         dispatcher.forward(request, response);
     }
 

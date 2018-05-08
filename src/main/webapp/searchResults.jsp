@@ -1,5 +1,5 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="Search Results" />
+<c:set var="title" value="Book Found" />
 <%@include file="head.jsp"%>
 
 <head role="banner">
@@ -19,31 +19,17 @@
 </head>
 
 <div class="container">
-    <div>
-        <h2>Search For: <small>${searchItem}</small></h2>
+    <div class="login-container" id="search">
+        <h3>- Search Found -</h3>
+        <hr/>
+        <div>
+            <img src="${bookListSrc[0]}"/>
+            <img src="${bookListSrc[1]}"/>
+            <img src="${bookListSrc[2]}"/>
+            <img src="${bookListSrc[3]}"/>
+            <img src="${bookListSrc[4]}"/>
+            <img src="${bookListSrc[5]}"/>
+        </div>
     </div>
-    <hr/>
-    <div>
-        <h3>Link found:
-            <small>
-                <a href="https://www.google.com/search?tbm=bks&q=${searchItem}">
-                    Google Book Search
-                </a>
-            </small>
-        </h3>
-    </div>
-    <div>
-        <h3>Primary Book found:</h3>
-        <img src="${imgSrc}"/>
-    </div>
-    <div>
-        <h4>Other Results</h4>
-        <img src="${imgArraySrc[2]}"/>
-        <img src="${imgArraySrc[3]}"/>
-        <img src="${imgArraySrc[4]}"/>
-        <img src="${imgArraySrc[5]}"/>
-    </div>
-
 </div>
-
 

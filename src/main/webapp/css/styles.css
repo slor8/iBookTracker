@@ -55,7 +55,6 @@ html,body{
     color: white;
 }
 
-/* ========================== Start LOGIN ======================================*/
 .login-container{
     position: relative;
     width: 300px;
@@ -65,6 +64,7 @@ html,body{
     background: #fff;
     border: 1px solid #ccc;
 }
+
 
 #output{
     position: absolute;

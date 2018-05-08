@@ -34,7 +34,7 @@
             <th>Username</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>Isbn</th>
+            <th>Title</th>
             <th>Return Book</th>
         </thead>
         <tbody>
@@ -45,7 +45,7 @@
                 <td>${pageContext.request.remoteUser}</td>
                 <td>${issue.email}</td>
                 <td>${issue.phone}</td>
-                <td>${issue.isbn}</td>
+                <td>${issue.title}</td>
                 <td>
                     <a href='returnBook?id=${issue.id}'>Return Book</a>
                 </td>

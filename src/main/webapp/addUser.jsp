@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="addUser.jsp">Add User</a></li>
+                    <li><a href="addUser.jsp">Add</a></li>
                     <li><img id="logo-navbar-middle" src="images/logo.png" width="200"></li>
                     <li><a href="viewUser">View User</a></li>
                     <li><a href="logout">Logout</a></li>
@@ -19,14 +19,14 @@
 
 <div class="container">
     <div class="login-container">
-        <h3>- Add User -</h3>
+        <h3>- Add -</h3>
         <hr/>
         <form action="addUser" method="POST">
             <input type="text" name="firstName" placeholder="First Name" required>
             <input type="text" name="lastName" placeholder="Last Name" required>
             <input type="text" name="userName" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="text" name="role" placeholder="User Role" required />
+            <input type="text" name="role" placeholder="Role" required>
             <br/><br/>
             <button type="submit">Add</button>
         </form>

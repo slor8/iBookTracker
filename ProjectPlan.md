@@ -102,11 +102,11 @@ to use have been created.
 
 
 ### Week 15
-- [ ] Final Presentation
-- [ ] Create video
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [X] Final Presentation
+- [X] Create video
+- [X] Finalize all documentation
+- [X] Code quality check
 
 ### Week 16
-- [ ] Weekly journal entry
-- [ ] Final touches before code complete
+- [X] Weekly journal entry
+- [X] Final touches before code complete

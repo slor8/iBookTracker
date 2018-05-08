@@ -3,12 +3,11 @@
 
 #### Problem Statement
 
-It is hard keeping track of what people borrowed. Even when it is written down on paper, it could be lost. When multiple people issueBook
-multiple items, it may get hard to remember who has issueBook and return what item. iBookTracker will do exactly that, focus to 
-maintain the records of the issueBook and return item from the user.
+It is hard keeping track of what people borrowed. Even when it is written down on paper, it could be lost. When multiple people borrowed
+multiple items, it may get hard to remember who has borrowed and return what item. iBookTracker will do exactly that, focus to 
+maintain the records of the borrow and return item from the user.
 
-iBookTracker will automatically track people when they issueBook, return, and will also check available items.
- 
+iBookTracker will automatically track people when they borrow and return item.
 #### Project Technologies/Techniques
 
 * Security/Authentication
@@ -20,7 +19,7 @@ iBookTracker will automatically track people when they issueBook, return, and wi
     * Store users
     * Store book information
 * Web Services
-    * Google Book API
+    * Google Book 
 * Logging 
     * Configurable logging using Log4J
 * CSS
@@ -28,7 +27,7 @@ iBookTracker will automatically track people when they issueBook, return, and wi
 * Hosting
     * AWS
 * Independent Research Topic
-    * Google Book API
+    * JSoup
     * Bootstrap
 * Unit Testing 
     * JUnit tests to achieve 80%+ code coverage

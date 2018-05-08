@@ -18,11 +18,15 @@
     </nav>
 </head>
 
-<div class="container" id="search">
-    <h3>Search Book: </h3>
-    <hr/>
-    <form action="searchBooks" method="get">
-        <input type="text" name="imageName" id="imageName" placeholder="Book Title" required>
-        <input type="submit" value="Submit" class="btn btn-info btn-lg">
-    </form>
+<div class="container">
+    <div class="login-container" id="search">
+        <h3>- Search -</h3>
+        <hr/>
+        <form action="searchBooks" method="get">
+            <input type="text" name="searchBook" id="searchBook" placeholder="Book Title" required>
+            <br/>
+            <button type="submit">Search</button>
+        </form>
+    </div>
 </div>
+

@@ -26,7 +26,7 @@
         <form action="checkOutBook" method="POST">
             <input type="text" name="name" placeholder="Full Name" required>
             <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="text" name="phone" placeholder="Phone ex. xxx-xxx-xxx" required>
             <input type="text" name="title" placeholder="Title" required>
             <br/><br/>
             <button type="submit">Check-Out</button>

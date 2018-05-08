@@ -837,3 +837,396 @@
 [INFO ] 2018-05-08 03:03:13.265 [main] BookParser - Love passed to ImageParse
 [INFO ] 2018-05-08 03:21:39.391 [main] BookParser - Love passed to ImageParse
 [INFO ] 2018-05-08 03:23:40.421 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:29:07.922 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:29:08.908 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:29:09.133 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:29:11.333 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:29:12.338 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:29:12.499 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:29:13.165 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:29:13.314 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:31:07.812 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:31:08.372 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:31:08.473 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:31:09.979 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:31:10.759 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:31:10.803 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:31:11.330 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:31:11.395 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:31:26.263 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:31:26.893 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:31:27.029 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:31:28.790 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:31:29.609 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:31:29.676 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:31:30.101 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:31:30.167 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:32:38.535 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:32:39.295 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:32:39.440 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:32:41.900 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:32:42.513 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:32:42.587 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:32:43.131 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:32:43.193 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:32:48.127 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:32:48.809 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:32:48.948 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:32:50.868 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:32:51.640 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:32:51.710 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:32:52.127 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:32:52.176 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:33:53.040 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:33:54.158 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:33:54.369 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:33:57.435 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:33:57.981 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:33:58.072 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:33:58.555 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:33:58.635 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:34:04.809 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:34:06.331 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:34:06.477 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:34:08.700 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:34:09.253 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:34:09.310 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:34:09.667 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:34:09.709 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:43:56.570 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:43:56.899 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:43:56.973 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:43:58.606 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:43:59.466 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:43:59.516 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:44:00.089 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:44:00.184 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:44:37.523 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:44:37.933 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:44:38.037 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:44:39.478 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:44:40.281 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:44:40.370 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:44:40.820 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:44:40.903 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 03:49:03.410 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:49:03.773 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:49:03.827 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:49:06.343 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:49:06.975 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:49:07.012 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:49:07.313 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:49:07.354 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 03:50:43.531 [http-nio-8080-exec-19] BookParser - Love passed to ImageParse
+[INFO ] 2018-05-08 03:50:44.465 [http-nio-8080-exec-19] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:51:47.660 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:51:47.966 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:51:48.034 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:51:49.439 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:51:50.114 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:51:50.147 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:51:50.470 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:51:50.501 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 03:51:57.632 [http-nio-8080-exec-21] BookParser - Love passed to ImageParse
+[INFO ] 2018-05-08 03:51:58.034 [http-nio-8080-exec-21] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:54:38.626 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 03:54:39.069 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 03:54:39.193 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 03:54:41.354 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 03:54:42.302 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 03:54:42.478 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 03:54:42.915 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 03:54:42.957 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 03:55:58.670 [http-nio-8080-exec-5] BookParser - Love passed to ImageParse
+[INFO ] 2018-05-08 03:55:59.811 [http-nio-8080-exec-5] BookParser - Love passed to ImageParse
+[INFO ] 2018-05-08 03:57:02.237 [http-nio-8080-exec-10] BookParser - Java passed to ImageParse
+[INFO ] 2018-05-08 03:57:02.824 [http-nio-8080-exec-10] BookParser - Java passed to ImageParse
+[DEBUG] 2018-05-08 04:01:57.712 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:01:58.118 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:01:58.207 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:01:59.616 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:02:00.324 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:02:00.361 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:02:00.749 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:02:00.794 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 04:03:00.788 [http-nio-8080-exec-7] BookParser - java passed to ImageParse
+[INFO ] 2018-05-08 04:03:02.483 [http-nio-8080-exec-7] BookParser - java passed to ImageParse
+[DEBUG] 2018-05-08 04:04:41.044 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:04:41.735 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:04:41.847 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:04:44.726 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:04:45.481 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:04:45.582 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:04:45.864 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:04:45.925 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 04:05:32.893 [http-nio-8080-exec-14] BookParser - java passed to ImageParse
+[INFO ] 2018-05-08 04:05:33.520 [http-nio-8080-exec-14] BookParser - java passed to ImageParse
+[DEBUG] 2018-05-08 04:07:33.032 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:07:33.403 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:07:33.478 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:07:35.338 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:07:36.098 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:07:36.146 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:07:36.429 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:07:36.468 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 04:08:44.206 [http-nio-8080-exec-2] BookParser - Hello passed to ImageParse
+[INFO ] 2018-05-08 04:08:45.469 [http-nio-8080-exec-2] BookParser - Hello passed to ImageParse
+[DEBUG] 2018-05-08 04:10:54.539 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:10:55.095 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:10:55.161 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:10:56.784 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:10:57.493 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:10:57.548 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:10:57.806 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:10:57.837 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 04:12:37.941 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:12:38.305 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:12:38.371 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:12:39.647 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:12:40.506 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:12:40.530 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:12:40.801 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:12:40.831 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 04:15:07.535 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:15:08.416 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:15:08.551 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:15:10.426 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:15:11.044 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:15:11.074 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:15:11.383 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:15:11.444 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 04:15:53.807 [http-nio-8080-exec-6] BookParser - Are you my mother passed to ImageParse
+[INFO ] 2018-05-08 04:15:55.106 [http-nio-8080-exec-6] BookParser - Are you my mother passed to ImageParse
+[DEBUG] 2018-05-08 04:24:54.360 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 04:24:54.795 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 04:24:54.928 [main] GenericDao - Searching for: I
+[INFO ] 2018-05-08 04:24:56.709 [main] BookParser - Love passed to ImageParse
+[DEBUG] 2018-05-08 04:24:57.397 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 04:24:57.435 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 04:24:57.788 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 04:24:57.820 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:39:26.747 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:39:27.120 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:39:27.191 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:39:29.452 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:39:29.487 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:39:29.873 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:39:29.941 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:42:29.280 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:42:29.666 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:42:29.738 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:42:32.540 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:42:32.575 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:42:32.994 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:42:33.053 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:45:39.890 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:45:40.276 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:45:40.348 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:45:42.385 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:45:42.419 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:45:42.691 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:45:42.722 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:50:17.937 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:50:18.383 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:50:18.454 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:50:21.058 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:50:21.129 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:50:21.482 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:50:21.522 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:52:30.229 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:52:30.604 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:52:30.679 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:52:33.008 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:52:33.055 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:52:33.473 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:52:33.519 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:53:31.001 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:53:31.343 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:53:31.407 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:53:33.214 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:53:33.259 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:53:33.588 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:53:33.651 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:57:22.045 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:57:22.355 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:57:22.454 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:57:22.811 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:57:22.868 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:57:23.174 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:57:23.196 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 12:58:56.094 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 12:58:56.405 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 12:58:56.492 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 12:58:56.796 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 12:58:56.821 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 12:58:57.158 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 12:58:57.198 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 13:00:05.382 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 13:00:05.727 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 13:00:05.792 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 13:00:06.091 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 13:00:06.119 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 13:00:06.442 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 13:00:06.481 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 13:02:03.158 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 13:02:03.653 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 13:02:03.746 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 13:02:04.206 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 13:02:04.239 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 13:02:04.591 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 13:02:04.641 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 13:11:26.487 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 13:11:26.937 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 13:11:27.024 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 13:11:27.734 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 13:11:27.783 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 13:11:28.178 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 13:11:28.257 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 13:14:28.382 [http-nio-8080-exec-9] UpdateUser - Kelly
+[INFO ] 2018-05-08 13:14:28.383 [http-nio-8080-exec-9] UpdateUser - William
+[INFO ] 2018-05-08 13:14:28.383 [http-nio-8080-exec-9] UpdateUser - null
+[INFO ] 2018-05-08 13:14:28.383 [http-nio-8080-exec-9] UpdateUser - kelly
+[DEBUG] 2018-05-08 13:16:17.687 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 13:16:18.056 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 13:16:18.233 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 13:16:18.706 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 13:16:18.750 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 13:16:19.187 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 13:16:19.219 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 13:19:15.386 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 13:19:16.050 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 13:19:16.151 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 13:19:16.666 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 13:19:16.706 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 13:19:17.077 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 13:19:17.142 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:24:48.983 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:24:49.604 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:24:49.755 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:24:50.186 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:24:50.234 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:24:50.619 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:24:50.670 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:25:29.054 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:25:29.613 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:25:29.694 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:25:30.160 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:25:30.198 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:25:30.675 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:25:30.749 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:34:49.078 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:34:49.456 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:34:49.523 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:34:49.964 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:34:49.994 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:34:50.340 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:34:50.378 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:36:54.024 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:36:54.571 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:36:54.643 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:36:55.000 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:36:55.047 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:36:55.394 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:36:55.427 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:38:47.519 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:38:48.175 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:38:48.324 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:38:48.828 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:38:48.872 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:38:49.258 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:38:49.307 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:40:46.483 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:40:46.851 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:40:46.931 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:40:47.268 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:40:47.327 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:40:47.745 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:40:47.781 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:42:33.819 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:42:34.163 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:42:34.226 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:42:34.550 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:42:34.587 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:42:34.946 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:42:34.978 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:45:29.425 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:45:29.744 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:45:29.836 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:45:30.155 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:45:30.202 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:45:30.493 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:45:30.534 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:46:43.667 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:46:44.185 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:46:44.267 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:46:44.775 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:46:44.830 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:46:45.176 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:46:45.253 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:48:35.094 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:48:35.407 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:48:35.503 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:48:35.834 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:48:35.866 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:48:36.167 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:48:36.200 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:53:11.452 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:53:11.760 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:53:11.875 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:53:12.261 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:53:12.302 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:53:12.665 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:53:12.698 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:55:01.503 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:55:01.851 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:55:01.918 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:55:02.231 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:55:02.271 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:55:02.580 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:55:02.619 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:56:07.661 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:56:07.971 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:56:08.084 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:56:08.455 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:56:08.502 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:56:08.824 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:56:08.866 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 14:58:30.232 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 14:58:30.580 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 14:58:30.662 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 14:58:31.269 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 14:58:31.350 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 14:58:31.751 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 14:58:31.791 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 15:02:07.935 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 15:02:08.491 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 15:02:08.587 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 15:02:09.267 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 15:02:09.355 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 15:02:10.008 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 15:02:10.092 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 15:02:56.535 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 15:02:56.990 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 15:02:57.059 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 15:02:57.648 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 15:02:57.713 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 15:02:58.180 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 15:02:58.210 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 15:14:58.826 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 15:14:59.119 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 15:14:59.186 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 15:14:59.534 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 15:14:59.573 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 15:14:59.960 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 15:14:59.994 [main] GenericDao - Searching for user with phone = 608
+[DEBUG] 2018-05-08 15:21:30.126 [main] GenericDao - Searching for user with lastName = Curry
+[DEBUG] 2018-05-08 15:21:30.545 [main] GenericDao - Searching for user with firstName = e
+[DEBUG] 2018-05-08 15:21:30.642 [main] GenericDao - Searching for: I
+[DEBUG] 2018-05-08 15:21:31.108 [main] GenericDao - Searching for user with title = Charlotte's Web
+[DEBUG] 2018-05-08 15:21:31.151 [main] GenericDao - Searching for user with title = e
+[DEBUG] 2018-05-08 15:21:31.653 [main] GenericDao - Searching for user with phone = 608-353-3501
+[DEBUG] 2018-05-08 15:21:31.699 [main] GenericDao - Searching for user with phone = 608
+[INFO ] 2018-05-08 15:24:44.496 [http-nio-8080-exec-2] UpdateUser - Kim09
+[INFO ] 2018-05-08 15:24:44.505 [http-nio-8080-exec-2] UpdateUser - Jefferson
+[INFO ] 2018-05-08 15:24:44.505 [http-nio-8080-exec-2] UpdateUser - null
+[INFO ] 2018-05-08 15:24:44.505 [http-nio-8080-exec-2] UpdateUser - hello
